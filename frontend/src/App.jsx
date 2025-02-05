@@ -1,14 +1,16 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Layout from "./Layout/Layout";
 
 function App() {
-
-
   return (
-    <>
-     <h1>this is a app</h1>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/*" element={<Layout />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
