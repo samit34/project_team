@@ -82,9 +82,9 @@ left: 50%;
         align-items: center;
         width: 100%;
         height: 100vh;
-        transform: translatey(-59rem);
+        transform: translatey(-200rem);
         background-color: rgb(255, 255, 255);
-        transition: all 1s ease;
+        transition: all 1.5s ease;
         gap: 1rem;
         padding: 2rem;
     }
@@ -110,4 +110,65 @@ left: 50%;
     .inner-nav{
         position: relative;
     }
+
+    .serach{
+        /* display: none; */
+        position: absolute;
+        top: 7rem;
+        height: 13rem;
+}
+
+.serach-input{
+    width: 100%;
+    height: 4rem;}
+
+} 
+
+
+
+@media screen and (max-width:576px) {
+    .serach{
+        /* display: none; */
+        position: absolute;
+        top: 5rem;
+        height: 6rem;
+}
+
+.serach-input{
+    width: 100%;
+    height: 2rem;}
+
+    .serach-input::placeholder{
+        font-size: 2rem;
+        color: rgb(0, 0, 0);
+        opacity:10;
+        margin-bottom: 10px;
+    }
+    
+
+
+}
+
+
+@media screen and (max-width:576px) {
+    .serach{
+        /* display: none; */
+        position: absolute;
+        top: 5rem;
+        height: 6rem;
+}
+
+.serach-input{
+    width: 100%;
+    height: 2rem;}
+
+    .serach-input::placeholder{
+        font-size: 2rem;
+        color: rgb(0, 0, 0);
+        opacity:10;
+        margin-bottom: 10px;
+    }
+    
+
+
 }
