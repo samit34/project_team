@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
-
+/* nav{
+ position: fixed;
+ top: 0px;
+ z-index: 
+ 1000;
+ width: 100%;
+} */
 .nav-icons{
     display: inline-block;
     font-size: 28px;
@@ -81,7 +87,7 @@ left: 50%;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 100vh;
+        /* height: 100vh; */
         transform: translatey(-200rem);
         background-color: rgb(255, 255, 255);
         transition: all 1.5s ease;

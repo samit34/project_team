@@ -10,6 +10,7 @@ import BasicServices from '../../Components/basicServices/BasicServices';
 import AddServices from '../../Components/additionalServices/AddServices';
 
 import Category_banner from '../../Components/Category_banner/Category_banner';
+import Footer from '../../Components/Footer/Footer';
 
 
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
 
       <BasicServices/>
       <AddServices/>
-
+  <Footer/>
 
     </>
   );
