@@ -9,7 +9,7 @@ const Footer = () => {
     <>
      <footer className='bg-black '>
         <div className="inner-footer">
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid lg:grid-cols-4 gap-4">
                 <div className="footer-box-one ">
                    <div className="inner-footer-box-one  flex flex-col gap-5 p-4 text-white">
                      <h1 className='footer-logo' >logo</h1>
@@ -39,7 +39,7 @@ const Footer = () => {
                
             <div className="footer-box-two p-4 text-white">
               <div className="inner-box-two flex flex-col gap-4">
-              <h1 class="footer-box-two-heading footer-logo" >Latest Posts</h1>
+              <h1 class="footer-box-two-heading footer-logo" >Latest Services</h1>
 
               <div className="footer-box-two-content">
                 <p class="fb-two">Where Music Is Headed Next</p>
@@ -63,14 +63,14 @@ const Footer = () => {
               </div>
             </div>
                 <div className="footer-box-three p-4 text-white">
-                  <div className="inner-footer-box-three">
-                     <h1 class="footer-logo" >Twitter Feed</h1>
+                  <div className="inner-footer-box-three flex flex-col gap-4 ">
+                     <h1 class="footer-logo" >Terms & Condition</h1>
                      <p>Couldn't connect with Twitter</p>
                   </div>
                 </div>
                 <div className="footer-box-four  text-white p-4">
-                  <div className="inner-footer-box-four">
-                    <h1 class="footer-logo">Instagram Feed</h1>
+                  <div className="inner-footer-box-four flex flex-col gap-4 ">
+                    <h1 class="footer-logo">Payment Method </h1>
                     <hr />
                   </div>
                   

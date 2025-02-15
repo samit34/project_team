@@ -3,6 +3,10 @@ h1.footer-logo {
     font-weight:600
 }
 
+footer{
+    padding: 2rem 0px;
+}
+
 .inner-footer{
     margin: 0px 45px;
 }

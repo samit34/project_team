@@ -6,7 +6,7 @@ const BasicServices = () => {
         <>
             <section className="bs-section">
                 <Heading props='Basic Services'/>
-                <div className="bs-container bg-red-100">
+                <div className="bs-container ">
                     <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div className="rounded-lg bg-white p-6 shadow-md flex flex-col sm:flex-row gap-6">
                             <div className="flex flex-col sm:space-y-10 pr-5 w-1/2">
