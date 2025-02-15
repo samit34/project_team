@@ -20,11 +20,12 @@ const AddServices = () => {
                                 </div>
                             </div>
 
-                            <div className="w-full flex flex-col space-y-20">
-                                <div className="heading-h1">
-                                    <h2 className='text-md md:text-xl font-semibold pb-3 '>Home Services</h2>
+                            <div className="w-full flex flex-col">
+                                <div className="heading-h1 w-full">
+                                    <h2 className='text-md md:text-xl font-semibold pb-3  break-all'>Home Services</h2>
                                     <Button props='Learn More' />
                                 </div>
+                                
                             </div>
 
                         </div>
@@ -39,8 +40,8 @@ const AddServices = () => {
                             </div>
 
                             <div className="w-full flex flex-col">
-                                <div className="heading-h1">
-                                    <h2 className='text-md md:text-xl font-semibold pb-3 '>Automotive Services</h2>
+                                <div className="heading-h1 ">
+                                    <h2 className='text-md md:text-xl font-semibold pb-3  break-all'>Automotive Services</h2>
                                     <Button props='Learn More' />
                                 </div>
                             </div>
@@ -57,8 +58,26 @@ const AddServices = () => {
                             </div>
 
                             <div className="w-full flex flex-col">
-                                <div className="heading-h1">
-                                    <h2 className='text-md md:text-xl font-semibold pb-3 '>Business Services</h2>
+                                <div className="heading-h1 ">
+                                    <h2 className='text-md md:text-xl font-semibold pb-3  break-all'>Business Services</h2>
+                                    <Button props='Learn More' />
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-6">
+                            <div className="flex flex-row space-x-14 sm:space-x-10">
+                                <div className="w-1/2">
+                                    <img src={img1} alt="" className='w-16 h-16 img-fluid' />
+                                </div>
+                                <div className="w-1/2 pl-2">
+                                    <p className='text-[12px]'>FROM $399</p>
+                                </div>
+                            </div>
+                            
+                            <div className="w-full flex flex-col">
+                                <div className="heading-h1 ">
+                                    <h2 className='text-md md:text-xl font-semibold pb-3  break-all'>Pet Services</h2>
                                     <Button props='Learn More' />
                                 </div>
                             </div>
@@ -75,8 +94,8 @@ const AddServices = () => {
                             </div>
 
                             <div className="w-full flex flex-col">
-                                <div className="heading-h1">
-                                    <h2 className='text-md md:text-xl font-semibold pb-3 '>Childcare and Family Services</h2>
+                                <div className="heading-h1 ">
+                                    <h2 className='text-md md:text-xl font-semibold pb-3 break-all'>Event And Entertainment Services</h2>
                                     <Button props='Learn More' />
                                 </div>
                             </div>
@@ -93,8 +112,8 @@ const AddServices = () => {
                             </div>
 
                             <div className="w-full flex flex-col">
-                                <div className="heading-h1">
-                                    <h2 className='text-md md:text-xl font-semibold pb-3 '>Event And Entertainment Services</h2>
+                                <div className="heading-h1 ">
+                                    <h2 className='text-md md:text-xl font-semibold pb-3 break-all '>Transport and Logistics Services</h2>
                                     <Button props='Learn More' />
                                 </div>
                             </div>
@@ -111,8 +130,8 @@ const AddServices = () => {
                             </div>
 
                             <div className="w-full flex flex-col">
-                                <div className="heading-h1">
-                                    <h2 className='text-md md:text-xl font-semibold pb-3 '>Transport and Logistics Services</h2>
+                                <div className="heading-h1 ">
+                                    <h2 className='text-md md:text-xl font-semibold pb-3 break-all'>Legal and Financial Services</h2>
                                     <Button props='Learn More' />
                                 </div>
                             </div>
@@ -129,26 +148,8 @@ const AddServices = () => {
                             </div>
 
                             <div className="w-full flex flex-col">
-                                <div className="heading-h1">
-                                    <h2 className='text-md md:text-xl font-semibold pb-3 '>Security Services</h2>
-                                    <Button props='Learn More' />
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-6">
-                            <div className="flex flex-row space-x-14 sm:space-x-10">
-                                <div className="w-1/2">
-                                    <img src={img1} alt="" className='w-16 h-16 img-fluid' />
-                                </div>
-                                <div className="w-1/2 pl-2">
-                                    <p className='text-[12px]'>FROM $399</p>
-                                </div>
-                            </div>
-
-                            <div className="w-full flex flex-col">
-                                <div className="heading-h1">
-                                    <h2 className='text-md md:text-xl font-semibold pb-3 '>Pet Services</h2>
+                                <div className="heading-h1 ">
+                                    <h2 className='text-md md:text-xl font-semibold pb-3  break-all'>Childcare and Family Services</h2>
                                     <Button props='Learn More' />
                                 </div>
                             </div>
