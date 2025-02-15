@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
-
+/* nav{
+ position: fixed;
+ top: 0px;
+ z-index: 
+ 1000;
+ width: 100%;
+} */
 .nav-icons{
     display: inline-block;
     font-size: 28px;
