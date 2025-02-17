@@ -1,8 +1,8 @@
 import React from 'react'
-import Heading from '../heading/Heading'
+import Heading from '../../../../Components/heading/Heading'
 import img1 from '/assets/addser1.png';
 
-import Button from '../button/Button'
+import Button from '../../../../Components/button/Button'
 const AddServices = () => {
     return (
         <>

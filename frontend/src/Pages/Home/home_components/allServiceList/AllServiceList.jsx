@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from '../heading/Heading'
+import Heading from '../../../../Components/heading/Heading'
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 

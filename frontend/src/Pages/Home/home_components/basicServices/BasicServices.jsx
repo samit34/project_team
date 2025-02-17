@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaCircleCheck } from "react-icons/fa6";
-import Heading from '../heading/Heading';
+import Heading from '../../../../Components/heading/Heading';
 const BasicServices = () => {
     return (
         <>
