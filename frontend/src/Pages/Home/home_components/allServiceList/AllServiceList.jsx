@@ -41,12 +41,6 @@ const AllServiceList = () => {
                             </div>
                         </div>
                         ))}
-                        
-
-
-
-
-                        
                     </div>
                 </div>
             </section>

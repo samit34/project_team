@@ -1,6 +1,6 @@
 import React from 'react'
 import Heading from '../../../../Components/heading/Heading'
-import Button from '../../../../Components/button/Button';
+
 
 
 const serviceProviders = [

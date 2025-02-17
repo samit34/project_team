@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Heading from '../../../../Components/heading/Heading';
 
 const Centerthree = () => {
    
@@ -46,9 +47,8 @@ const Centerthree = () => {
       
         return (
           <>
-            <h1 className="text-center font-bold text-2xl p-3 ">
-              Automation-service
-            </h1>
+          <Heading props="Automation-service"/>
+           
             <div className="container max-w-6xl mx-auto p-3 ">
               <div className="slider-container">
                 <Slider {...settings}>
