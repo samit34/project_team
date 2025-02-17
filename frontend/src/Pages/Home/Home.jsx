@@ -12,7 +12,7 @@ import AddServices from './home_components/additionalServices/AddServices';
 import Category_banner from '../../Components/Category_banner/Category_banner';
 
 import AllServiceList from './home_components/allServiceList/AllServiceList';
-
+import HighRnkSerProvider from './home_components/highRnkServprovider/HighRnkSerProvider';
 import Footer from '../../Components/Footer/Footer';
 
 
@@ -27,6 +27,7 @@ const Home = () => {
       <BasicServices/>
       <AddServices/>
       <AllServiceList/>
+      <HighRnkSerProvider/>
 
 
   <Footer/>
