@@ -27,7 +27,6 @@ const Home = () => {
     <>
       <Banner />
       <Category_banner/>
-
       <BasicServices/>
       <Centercrouser/>
       <AddServices/>
