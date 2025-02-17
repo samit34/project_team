@@ -24,10 +24,8 @@ const Home = () => {
     <>
       <Banner />
       <Category_banner/>
-
       <BasicServices/>
       <AddServices/>
-
       <AllServiceList/>
 
 
