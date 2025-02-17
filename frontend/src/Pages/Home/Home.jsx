@@ -14,6 +14,9 @@ import Category_banner from '../../Components/Category_banner/Category_banner';
 import AllServiceList from './home_components/allServiceList/AllServiceList';
 import HighRnkSerProvider from './home_components/highRnkServprovider/HighRnkSerProvider';
 import Footer from '../../Components/Footer/Footer';
+import Centercrouser from './home_components/Center_crouser/Centercrouser';
+import Centertwo from './home_components/Center-crouser-two/Center-two';
+import Centerthree from './home_components/Center-crouser-three/Center-three';
 
 
 
@@ -25,11 +28,13 @@ const Home = () => {
       <Banner />
       <Category_banner/>
       <BasicServices/>
+      <Centercrouser/>
       <AddServices/>
+      <Centertwo/>
       <AllServiceList/>
       <HighRnkSerProvider/>
 
-
+<Centerthree/>
   <Footer/>
 
 
