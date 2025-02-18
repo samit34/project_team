@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, X, Search, Calendar, Bookmark, Settings } from "lucide-react";
+import { Menu, X, UserPen, Calendar, Bookmark, Settings } from "lucide-react";
 
 const ConsumerDashbord = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +17,8 @@ const ConsumerDashbord = () => {
             </div>
     
             <nav className="mt-4">
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
-                <Search className="w-5 h-5 mr-3" /> Search Services
+            <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+                <UserPen className="w-5 h-5 mr-3" /> Profile
               </a>
               <a href="#" className="flex items-center p-4 hover:bg-gray-200">
                 <Calendar className="w-5 h-5 mr-3" /> My Bookings

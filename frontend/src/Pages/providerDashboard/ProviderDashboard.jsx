@@ -30,13 +30,13 @@ const  ProviderDashboard = () => {
                 <Wallet className="w-5 h-5 mr-3" /> Earnings
               </a>
               <a href="#" className="flex items-center p-4 hover:bg-gray-200">
-                <Settings className="w-5 h-5 mr-3" /> Settings
+                <Settings className="w-5 h-5 mr-3" /> pending Request
               </a>
               <a href="#" className="flex items-center p-4 hover:bg-gray-200">
-                <Settings className="w-5 h-5 mr-3" /> Settings
+                <Settings className="w-5 h-5 mr-3" /> Manage Services
               </a>
               <a href="#" className="flex items-center p-4 hover:bg-gray-200">
-                <Settings className="w-5 h-5 mr-3" /> Settings
+                <Settings className="w-5 h-5 mr-3" /> jobs done
               </a>
               <a href="#" className="flex items-center p-4 hover:bg-gray-200">
                 <Settings className="w-5 h-5 mr-3" /> Settings
