@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+.provider-category-box-one{
+    background-image: url("./assets/plumber.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 13rem;
+}
+
+
+.provider-category-box-two{
+    background-image: url("./assets/homeservice.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 13rem;
+}
+
+.provider-category-box-three{
+    background-image: url("./assets/carservice.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 13rem;
+}
+
+.provider-category-box-four{
+    background-image: url("./assets/skincare.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 13rem;
+}
+
+.provider-category-box-five{
+    background-image: url("./assets/petservice.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 13rem;
+}
+
+
+
+.provider-category-box-six{
+    background-image: url("./assets/healtservices.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 13rem;
+}
+
+.provider-category-box-one,
+.provider-category-box-two,
+.provider-category-box-three,
+.provider-category-box-four ,.provider-category-box-five,.provider-category-box-six {
+    /* filter: grayscale(100%); */
+    transition: filter 0.3s ease;
+    text-align: center;
+    align-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.provider-category-box-one:hover,
+.provider-category-box-two:hover,
+.provider-category-box-three:hover,
+.provider-category-box-four:hover,.provider-category-box-five:hover,.provider-category-box-six:hover  {
+    filter: none;
+}
+
+.provider-category-box-one h3 ,
+.provider-category-box-two h3,
+.provider-category-box-three h3,
+.provider-category-box-four h3 ,.provider-category-box-five h3,.provider-category-box-six  h3{
+    display: none;
+    transition: all 0.5s ease;
+}
+
+
+.provider-category-box-one:hover h3,
+.provider-category-box-two:hover h3,
+.provider-category-box-three:hover h3,
+.provider-category-box-four:hover h3,
+.provider-category-box-five:hover h3,
+.provider-category-box-six:hover h3 {
+    display: block !important;
+}
+
+.slick-list button{
+   display: none;
+}
+
+
+.slick-track{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
