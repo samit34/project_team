@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X, UserPen, Calendar, Bookmark, Settings } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ConsumerDashbord = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,18 +18,18 @@ const ConsumerDashbord = () => {
             </div>
     
             <nav className="mt-4">
-            <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+            <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
                 <UserPen className="w-5 h-5 mr-3" /> Profile
-              </a>
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+              </Link>
+              <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
                 <Calendar className="w-5 h-5 mr-3" /> My Bookings
-              </a>
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+              </Link>
+              <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
                 <Bookmark className="w-5 h-5 mr-3" /> Saved Providers
-              </a>
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+              </Link>
+              <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
                 <Settings className="w-5 h-5 mr-3" /> Settings
-              </a>
+              </Link>
             </nav>
           </div>
     

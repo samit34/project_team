@@ -7,7 +7,7 @@ import './Category_banner.css'; // Your custom styles
 
 const Category_banner = () => {
     const settings = {
-        dots: true,              // Shows navigation dots below the slider
+        dots: false,              // Shows navigation dots below the slider
         infinite: true,          // Enables infinite looping
         speed: 5000,             // Transition duration (increase for slower movement)
         slidesToShow: 3,         // Number of slides visible at once

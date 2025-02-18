@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
-import { Menu, X, Home, ClipboardList, Wallet, Settings,UserPen } from "lucide-react";
+import { Menu, X, ClipboardList, Wallet, Settings,UserPen } from "lucide-react";
+import { Link } from "react-router-dom";
 const  ProviderDashboard = () => {
   const [isOpen, setIsOpen] = useState(false);
       return (
@@ -20,32 +21,28 @@ const  ProviderDashboard = () => {
             </div>
     
             <nav className="mt-4">
-              <a href="/provider" className="flex items-center p-4 hover:bg-gray-200">
+              <Link to="/provider" className="flex items-center p-4 hover:bg-gray-200">
                 <UserPen className="w-5 h-5 mr-3" /> My Profile
-              </a>
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+              </Link>
+              <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
                 <ClipboardList className="w-5 h-5 mr-3" /> My Jobs
-              </a>
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+              </Link>
+              <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
                 <Wallet className="w-5 h-5 mr-3" /> Earnings
-              </a>
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+              </Link>
+              <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
                 <Settings className="w-5 h-5 mr-3" /> pending Request
-              </a>
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+              </Link>
+              <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
                 <Settings className="w-5 h-5 mr-3" /> Manage Services
-              </a>
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+              </Link>
+              <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
                 <Settings className="w-5 h-5 mr-3" /> jobs done
-              </a>
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+              </Link>
+              <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
                 <Settings className="w-5 h-5 mr-3" /> Settings
-              </a>
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
-                <Settings className="w-5 h-5 mr-3" /> Settings
-              </a>
-              
-
+              </Link>
+             
             </nav>
           </div>
     
