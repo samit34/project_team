@@ -1,7 +1,6 @@
 
 import React, { useState } from "react";
-import { Menu, X, Home, ClipboardList, Wallet, Settings } from "lucide-react";
-
+import { Menu, X, Home, ClipboardList, Wallet, Settings,UserPen } from "lucide-react";
 const  ProviderDashboard = () => {
   const [isOpen, setIsOpen] = useState(false);
       return (
@@ -13,7 +12,7 @@ const  ProviderDashboard = () => {
             } transition-transform duration-300 md:relative md:translate-x-0`}
           >
             <div className="flex items-center justify-between p-4 border-b">
-              <h2 className="text-xl font-semibold">Dashboard</h2>
+              <h2 className="text-xl font-semibold">Provider Dashboard</h2>
               <X
                 className="w-6 h-6 cursor-pointer md:hidden"
                 onClick={() => setIsOpen(false)}
@@ -21,8 +20,8 @@ const  ProviderDashboard = () => {
             </div>
     
             <nav className="mt-4">
-              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
-                <Home className="w-5 h-5 mr-3" /> Home
+              <a href="/provider" className="flex items-center p-4 hover:bg-gray-200">
+                <UserPen className="w-5 h-5 mr-3" /> My Profile
               </a>
               <a href="#" className="flex items-center p-4 hover:bg-gray-200">
                 <ClipboardList className="w-5 h-5 mr-3" /> My Jobs
@@ -33,15 +32,30 @@ const  ProviderDashboard = () => {
               <a href="#" className="flex items-center p-4 hover:bg-gray-200">
                 <Settings className="w-5 h-5 mr-3" /> Settings
               </a>
+              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+                <Settings className="w-5 h-5 mr-3" /> Settings
+              </a>
+              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+                <Settings className="w-5 h-5 mr-3" /> Settings
+              </a>
+              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+                <Settings className="w-5 h-5 mr-3" /> Settings
+              </a>
+              <a href="#" className="flex items-center p-4 hover:bg-gray-200">
+                <Settings className="w-5 h-5 mr-3" /> Settings
+              </a>
+              
+
             </nav>
           </div>
     
           {/* Main Content */}
           <div className="flex-1 flex flex-col">
             {/* Navbar */}
-            <header className="flex items-center justify-between p-4 bg-red-200 shadow-md">
+            <header className="flex items-center justify-end  p-4 bg-red-200 shadow-md">
+              <h5 className="text-xl font-bold mr-4">Sort</h5>
               <Menu className="w-6 h-6 cursor-pointer md:hidden" onClick={() => setIsOpen(true)} />
-              <h1 className="text-2xl font-bold">Provider Dashboard</h1>
+
             </header>
     
             {/* Content Area */}
@@ -62,3 +76,4 @@ const  ProviderDashboard = () => {
 
 
 export default ProviderDashboard
+
