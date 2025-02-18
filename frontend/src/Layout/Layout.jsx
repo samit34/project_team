@@ -7,8 +7,7 @@ import './Layout.css'
 
 import Home from '../Pages/Home/Home'
 import ProviderHome from '../Pages/providerHome/ProviderHome'
-import Provider from '../Pages/provider/Provider'
-import Consumer from '../Pages/consumer/Consumer'
+
 const Layout = () => {
   return (
     <>
