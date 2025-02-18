@@ -1,5 +1,5 @@
-import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Dashboard', href: '#',  },
@@ -28,10 +28,10 @@ const  Navbar = ()=> {
           </div>
 
           <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-          
-        
-
-            {/* Profile dropdown */}
+          <div className="nav-heading text-5xl black font-bold ">
+        <h1>Supher</h1>
+        </div>
+      
        
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end">
@@ -70,7 +70,7 @@ const  Navbar = ()=> {
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
                 item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                'block rounded-md px-3 py-2 text-base font-medium',
+                'block rounded-md px-3 py-2 text-4xl font-medium',
               )}
             >
               {item.name}
