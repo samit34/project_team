@@ -19,6 +19,7 @@ const Layout = () => {
    <Routes>
         <Route index element={<Home/>}/>
         <Route path='/provider' element={<ProviderHome/>}/>
+        <Route path='/providerDash' element={<ProviderHome/>}/>
        
    </Routes>
     </>

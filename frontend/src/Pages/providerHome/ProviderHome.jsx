@@ -4,7 +4,7 @@ import ProviderDashboard from '../providerDashboard/ProviderDashboard'
 const ProviderHome = () => {
   return (
   <>
-  <ProviderDashboard/>
+  <div>this is home page</div>
   </>
   )
 }
