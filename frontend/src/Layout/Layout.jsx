@@ -8,6 +8,7 @@ import './Layout.css'
 import Home from '../Pages/Home/Home'
 import ProviderHome from '../Pages/providerHome/ProviderHome'
 import ProviderDashboard from '../Pages/providerDashboard/ProviderDashboard'
+import ConsumerDashbord from '../Pages/consumerDashboard/ConsumerDashbord'
 
 
 
@@ -21,6 +22,7 @@ const Layout = () => {
         <Route index element={<Home/>}/>
         <Route path='/provider' element={<ProviderHome/>}/>
         <Route path='/providerDash' element={<ProviderDashboard/>}/>
+        <Route path='/ConsumerDash' element={<ConsumerDashbord/>}/>
        
    </Routes>
     </>
@@ -28,3 +30,4 @@ const Layout = () => {
 }
 
 export default Layout
+
