@@ -10,6 +10,8 @@ import ProviderHome from '../Pages/providerHome/ProviderHome'
 
 import ProviderDashboard from '../Pages/providerDashboard/ProviderDashboard'
 import ConsumerDashbord from '../Pages/consumerDashboard/ConsumerDashbord'
+import Showjobs from '../Pages/providerDashboard/Showjobs/Showjobs'
+import Stacks from '../Pages/providerDashboard/Stackpage/Stacks'
 
 
 
@@ -22,7 +24,10 @@ const Layout = () => {
    <Routes>
         <Route index element={<Home/>}/>
         <Route path='/provider' element={<ProviderHome/>}/>
-        <Route path='/providerDash' element={<ProviderDashboard/>}/>
+        <Route path='/providerDash' element={<ProviderDashboard/>}>
+        <Route index element={<Showjobs/>}/>
+        <Route path='stackpage' element={<Stacks/>}/>
+        </Route>
         <Route path='/ConsumerDash' element={<ConsumerDashbord/>}/>
        
    </Routes>
