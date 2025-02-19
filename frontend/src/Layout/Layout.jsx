@@ -17,10 +17,13 @@ import ProvProfile from '../Pages/providerDashboard/provProfile/ProvProfile'
 
 
 const Layout = () => {
+
+  const hideNavbar = location.pathname.startsWith('/providerDash') || location.pathname.startsWith('/ConsumerDash');
+
   return (
     <>
 
-    <Navbar className="navbar" />
+{ !hideNavbar && <Navbar className="navbar" /> }
     
    <Routes>
         <Route index element={<Home/>}/>
