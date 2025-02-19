@@ -11,6 +11,7 @@ import ConsumerDashbord from '../Pages/consumerDashboard/ConsumerDashbord'
 import Showjobs from '../Pages/providerDashboard/Showjobs/Showjobs'
 import Stacks from '../Pages/providerDashboard/Stackpage/Stacks'
 import Jobpost from '../Pages/consumerDashboard/jobpost/Jobpost'
+import ProvProfile from '../Pages/providerDashboard/provProfile/ProvProfile'
 
 
 
@@ -26,6 +27,7 @@ const Layout = () => {
         <Route path='/provider' element={<ProviderHome/>}/>
         <Route path='/providerDash' element={<ProviderDashboard/>}>
         <Route index element={<Showjobs/>}/>
+        <Route path='provprofile' element={<ProvProfile/>}/>
         <Route path='stackpage' element={<Stacks/>}/>
         </Route>
         <Route path='/ConsumerDash' element={<ConsumerDashbord/>}>
