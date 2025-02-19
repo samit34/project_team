@@ -34,8 +34,6 @@ const Layout = () => {
         <Route index element={<Jobpost/>}/>
         <Route path='stackpage' element={<Stacks/>}/>
         </Route>
-       
-       
    </Routes>
     </>
   )
