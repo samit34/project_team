@@ -4,11 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import "./Centercrouser";
+import Heading from "../../../../Components/heading/Heading";
+
 const Centercrouser = () => {
   const settings = {
     dots: false, // Shows navigation dots below the slider
     infinite: true, // Enables infinite looping
-    speed: 5000, // Transition duration (increase for slower movement)
+    speed: 7000, // Transition duration (increase for slower movement)
     slidesToShow: 4, // Number of slides visible at once
     // slidesToScroll: 1, // Number of slides to scroll per transition
     autoplay: true,          // Enables auto-play
@@ -46,14 +48,12 @@ const Centercrouser = () => {
 
   return (
     <>
-      <h1 className="text-center font-bold text-2xl p-3 ">
-        Automation-service
-      </h1>
+     <Heading props="Automation Services"/>
       <div className="container max-w-6xl mx-auto">
         <div className="slider-container">
           <Slider {...settings}>
             <div className="center-box-one">
-              <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+              <div class=" bg-white border border-gray-200 rounded-lg shadow-md">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -63,18 +63,18 @@ const Centercrouser = () => {
                 </a>
                 <div class="p-5">
                   <a href="#">
-                    <p class="mb-2 tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2 tracking-tight text-gray-900">
                       this that services
                     </p>
                   </a>
 
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       rating
                     </p>
                   </a>
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       price
                     </p>
                   </a>
@@ -82,7 +82,7 @@ const Centercrouser = () => {
               </div>
             </div>
             <div className="center-box-two">
-            <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class=" bg-white border border-gray-200 rounded-lg shadow-md">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -92,18 +92,18 @@ const Centercrouser = () => {
                 </a>
                 <div class="p-5">
                   <a href="#">
-                    <p class="mb-2 tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2 tracking-tight text-gray-900">
                       this that services
                     </p>
                   </a>
 
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       rating
                     </p>
                   </a>
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       price
                     </p>
                   </a>
@@ -111,7 +111,7 @@ const Centercrouser = () => {
               </div>
             </div>
             <div className="center-box-three">
-            <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class=" bg-white border border-gray-200 rounded-lg shadow-md">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -121,18 +121,18 @@ const Centercrouser = () => {
                 </a>
                 <div class="p-5">
                   <a href="#">
-                    <p class="mb-2 tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2 tracking-tight text-gray-900">
                       this that services
                     </p>
                   </a>
 
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       rating
                     </p>
                   </a>
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       price
                     </p>
                   </a>
@@ -140,7 +140,7 @@ const Centercrouser = () => {
               </div>
             </div>
             <div className="center-box-four">
-            <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class=" bg-white border border-gray-200 rounded-lg shadow-md">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -150,18 +150,18 @@ const Centercrouser = () => {
                 </a>
                 <div class="p-5">
                   <a href="#">
-                    <p class="mb-2 tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2 tracking-tight text-gray-900">
                       this that services
                     </p>
                   </a>
 
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       rating
                     </p>
                   </a>
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       price
                     </p>
                   </a>
@@ -169,7 +169,7 @@ const Centercrouser = () => {
               </div>
             </div>
             <div className="center-box-five">
-            <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class=" bg-white border border-gray-200 rounded-lg shadow-md">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -179,18 +179,18 @@ const Centercrouser = () => {
                 </a>
                 <div class="p-5">
                   <a href="#">
-                    <p class="mb-2 tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2 tracking-tight text-gray-900">
                       this that services
                     </p>
                   </a>
 
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       rating
                     </p>
                   </a>
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       price
                     </p>
                   </a>
@@ -198,7 +198,7 @@ const Centercrouser = () => {
               </div>
             </div>
             <div className="center-box-six">
-            <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class=" bg-white border border-gray-200 rounded-lg shadow-md">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -208,18 +208,18 @@ const Centercrouser = () => {
                 </a>
                 <div class="p-5">
                   <a href="#">
-                    <p class="mb-2 tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2 tracking-tight text-gray-900">
                       this that services
                     </p>
                   </a>
 
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       rating
                     </p>
                   </a>
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       price
                     </p>
                   </a>
@@ -227,7 +227,7 @@ const Centercrouser = () => {
               </div>
             </div>
             <div className="center-box-seven">
-            <div class=" bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+            <div class=" bg-white border border-gray-200 rounded-lg shadow-sm">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -237,18 +237,18 @@ const Centercrouser = () => {
                 </a>
                 <div class="p-5">
                   <a href="#">
-                    <p class="mb-2 tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2 tracking-tight text-gray-900">
                       this that services
                     </p>
                   </a>
 
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       rating
                     </p>
                   </a>
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       price
                     </p>
                   </a>
@@ -256,7 +256,7 @@ const Centercrouser = () => {
               </div>
             </div>
             <div className="c-box-eight">
-            <div class=" bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <div class=" bg-white border border-gray-200 rounded-lg shadow-md">
                 <a href="#">
                   <img
                     class="rounded-t-lg"
@@ -266,18 +266,18 @@ const Centercrouser = () => {
                 </a>
                 <div class="p-5">
                   <a href="#">
-                    <p class="mb-2 tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2 tracking-tight text-gray-900">
                       this that services
                     </p>
                   </a>
 
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       rating
                     </p>
                   </a>
                   <a href="#">
-                    <p class="mb-2  tracking-tight text-gray-900 dark:text-white">
+                    <p class="mb-2  tracking-tight text-gray-900">
                       price
                     </p>
                   </a>

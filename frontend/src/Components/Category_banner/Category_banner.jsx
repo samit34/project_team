@@ -10,7 +10,7 @@ const Category_banner = () => {
         dots: false,              // Shows navigation dots below the slider
         infinite: true,          // Enables infinite looping
         speed: 5000,             // Transition duration (increase for slower movement)
-        slidesToShow: 3,         // Number of slides visible at once
+        slidesToShow: 4,         // Number of slides visible at once
         slidesToScroll: 1,       // Number of slides to scroll per transition
         autoplay: true,          // Enables auto-play
         autoplaySpeed: 0,        // No delay between transitions
