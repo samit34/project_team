@@ -1,14 +1,18 @@
-export const formatValue = (value) => Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  maximumSignificantDigits: 3,
-  notation: 'compact',
-}).format(value);
+import React from 'react';
 
-export const formatThousands = (value) => Intl.NumberFormat('en-US', {
-  maximumSignificantDigits: 3,
-  notation: 'compact',
-}).format(value);
+export const formatValue = (value) => 
+  Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    maximumSignificantDigits: 3,
+    notation: 'compact',
+  }).format(value);
+
+export const formatThousands = (value) => 
+  Intl.NumberFormat('en-US', {
+    maximumSignificantDigits: 3,
+    notation: 'compact',
+  }).format(value);
 
 export const getCssVariable = (variable) => {
   return getComputedStyle(document.documentElement).getPropertyValue(variable).trim();
@@ -36,22 +40,22 @@ const adjustOKLCHOpacity = (oklchColor, opacity) => {
 };
 
 export const adjustColorOpacity = (color, opacity) => {
-  if (!color || typeof color !== "string" || color.trim() === "") {
+  if (!color || typeof color !== 'string' || color.trim() === '') {
     console.error(`Invalid color input: ${color}`);
-    return "rgba(0, 0, 0, 0.5)"; // Default fallback color
+    return 'rgba(0, 0, 0, 0.5)'; // Default fallback color
   }
 
-  if (color.startsWith("#")) {
+  if (color.startsWith('#')) {
     return adjustHexOpacity(color, opacity);
-  } else if (color.startsWith("hsl")) {
+  } else if (color.startsWith('hsl')) {
     return adjustHSLOpacity(color, opacity);
-  } else if (color.startsWith("oklch")) {
+  } else if (color.startsWith('oklch')) {
     return adjustOKLCHOpacity(color, opacity);
-  } else if (color.startsWith("rgb")) {
-    return color.replace("rgb", "rgba").replace(")", `, ${opacity})`);
+  } else if (color.startsWith('rgb')) {
+    return color.replace('rgb', 'rgba').replace(')', `, ${opacity})`);
   } else {
-    console.error("Unsupported color format:", color);
-    return "rgba(0, 0, 0, 0.5)";
+    console.error('Unsupported color format:', color);
+    return 'rgba(0, 0, 0, 0.5)';
   }
 };
 
@@ -62,8 +66,23 @@ export const oklchToRGBA = (oklchColor) => {
   const computedColor = window.getComputedStyle(tempDiv).color;
   document.body.removeChild(tempDiv);
   return computedColor;
-
 };
+
+// Example usage inside a React component
+const ColorDemo = () => {
+  const color = '#ff5733';
+  const opacity = 0.5;
+  const adjustedColor = adjustColorOpacity(color, opacity);
+
+  return (
+    <div>
+      <h3>Color Adjustment Example</h3>
+      <p style={{ color: adjustedColor }}>This text uses adjusted color opacity.</p>
+    </div>
+  );
+};
+
+export default ColorDemo;
 
 
 
