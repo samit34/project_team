@@ -62,6 +62,7 @@ export const oklchToRGBA = (oklchColor) => {
   const computedColor = window.getComputedStyle(tempDiv).color;
   document.body.removeChild(tempDiv);
   return computedColor;
+
 };
 
 
@@ -149,3 +150,5 @@ export const oklchToRGBA = (oklchColor) => {
   
 //   return computedColor;
 // };
+
+
