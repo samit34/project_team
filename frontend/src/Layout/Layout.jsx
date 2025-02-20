@@ -1,47 +1,76 @@
-import React from 'react'
-import Navbar from '../Components/Navbar/Navbar'
-import { Routes , Route } from 'react-router-dom'
-import './Layout.css'
-import Home from '../Pages/Home/Home'
-import ProviderHome from '../Pages/providerHome/ProviderHome'
-import ProviderDashboard from '../Pages/providerDashboard/ProviderDashboard'
-import ConsumerDashbord from '../Pages/consumerDashboard/ConsumerDashbord'
-import Showjobs from '../Pages/providerDashboard/Showjobs/Showjobs'
-import Stacks from '../Pages/providerDashboard/Stackpage/Stacks'
-import Jobpost from '../Pages/consumerDashboard/jobpost/Jobpost'
-import ProvProfile from '../Pages/providerDashboard/provProfile/ProvProfile'
+
+// import React from 'react'
+// import Navbar from '../Components/Navbar/Navbar'
+// import { Routes , Route } from 'react-router-dom'
+// import './Layout.css'
+// import Home from '../Pages/Home/Home'
+// import ProviderHome from '../Pages/providerHome/ProviderHome'
+// import ProviderDashboard from '../Pages/providerDashboard/ProviderDashboard'
+// import ConsumerDashbord from '../Pages/consumerDashboard/ConsumerDashbord'
+// import Showjobs from '../Pages/providerDashboard/Showjobs/Showjobs'
+// import Stacks from '../Pages/providerDashboard/Stackpage/Stacks'
+// import Jobpost from '../Pages/consumerDashboard/jobpost/Jobpost'
+// import ProvProfile from '../Pages/providerDashboard/provProfile/ProvProfile'
 
 
 
+import React, { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
+
+import Navbar from '../Components/Navbar/Navbar';
+import Home from '../Pages/Home/Home';
+import ProviderHome from '../Pages/providerHome/ProviderHome';
+import ProviderDashboard from '../Pages/providerDashboard/ProviderDashboard';
+import ConsumerDashbord from '../Pages/consumerDashboard/ConsumerDashbord';
+import Showjobs from '../Pages/providerDashboard/Showjobs/Showjobs';
+import Stacks from '../Pages/providerDashboard/Stackpage/Stacks';
+import Jobpost from '../Pages/consumerDashboard/jobpost/Jobpost';
+import ProvProfile from '../Pages/providerDashboard/provProfile/ProvProfile';
+import Dashboard from '../Pages/Dashboard';
+
+// import '../css/style.css';
+// import '../charts/ChartjsConfig';
 
 const Layout = () => {
+
+
+  
+  const location = useLocation();
+
+  useEffect(() => {
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo({ top: 0 });
+    document.documentElement.style.scrollBehavior = '';
+  }, [location.pathname]);
 
   const hideNavbar = location.pathname.startsWith('/providerDash') || location.pathname.startsWith('/ConsumerDash');
 
   return (
     <>
+      {!hideNavbar && <Navbar />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/provider" element={<ProviderHome />} />
+        <Route path="/dashboard" element={<Dashboard />} />
 
-{ !hideNavbar && <Navbar className="navbar" /> }
-    
-   <Routes>
-   
-        <Route index element={<Home/>}/>
-        <Route path='/provider' element={<ProviderHome/>}/>
-       
-        <Route path='/providerDash' element={<ProviderDashboard/>}>
-        <Route index element={<Showjobs/>}/>
-        <Route path='provprofile' element={<ProvProfile/>}/>
-        <Route path='stackpage' element={<Stacks/>}/>
+
+        {/* Provider Dashboard Routes */}
+        <Route path="/providerDash" element={<ProviderDashboard />}>
+          <Route index element={<Showjobs />} />
+          <Route path="provprofile" element={<ProvProfile />} />
+          <Route path="stackpage" element={<Stacks />} />
+
         </Route>
-        <Route path='/ConsumerDash' element={<ConsumerDashbord/>}>
-        <Route index element={<Jobpost/>}/>
-        <Route path='stackpage' element={<Stacks/>}/>
+
+        {/* Consumer Dashboard Routes */}
+        <Route path="/ConsumerDash" element={<ConsumerDashbord />}>
+          <Route index element={<Jobpost />} />
+          <Route path="stackpage" element={<Stacks />} />
         </Route>
-   </Routes>
+      </Routes>
     </>
-  )
-}
+  );
+};
 
-export default Layout
-
+export default Layout;

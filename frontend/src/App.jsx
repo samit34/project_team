@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
+
 import Layout from "./Layout/Layout.jsx";
-import './css/style.css';
-import './charts/ChartjsConfig.jsx'
+// import './css/style.css';
+// import './charts/ChartjsConfig.jsx'
+
 
 function App() {
   const location = useLocation();
