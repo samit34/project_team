@@ -1,7 +1,35 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  define: {
+    "process.env": {},
+  },
+  build: {
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
+  },
+});
+
+
+
+
+
+
+// import { defineConfig } from 'vite'
+// import react from '@vitejs/plugin-react'
+
+// // https://vitejs.dev/config/
+// export default defineConfig({
+//   define: {
+//     'process.env': process.env
+//   },
+//   plugins: [react()],
+//   build: {
+//     commonjsOptions: {
+//       transformMixedEsModules: true,
+//     }
+//   } 
+// })
