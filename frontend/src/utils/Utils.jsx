@@ -60,4 +60,4 @@ export const oklchToRGBA = (oklchColor) => {
   document.body.removeChild(tempDiv);
   
   return computedColor;
-};
+}; 
