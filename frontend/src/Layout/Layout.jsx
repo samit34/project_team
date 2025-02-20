@@ -1,6 +1,4 @@
 import React from 'react'
-
-
 import Navbar from '../Components/Navbar/Navbar'
 import { Routes , Route } from 'react-router-dom'
 import './Layout.css'
@@ -12,7 +10,7 @@ import Showjobs from '../Pages/providerDashboard/Showjobs/Showjobs'
 import Stacks from '../Pages/providerDashboard/Stackpage/Stacks'
 import Jobpost from '../Pages/consumerDashboard/jobpost/Jobpost'
 import ProvProfile from '../Pages/providerDashboard/provProfile/ProvProfile'
-import Dashboard from '../Pages/Dashboard'
+
 
 
 
@@ -30,7 +28,7 @@ const Layout = () => {
    
         <Route index element={<Home/>}/>
         <Route path='/provider' element={<ProviderHome/>}/>
-        <Route path='/dashboard' element={<Dashboard/>} />
+       
         <Route path='/providerDash' element={<ProviderDashboard/>}>
         <Route index element={<Showjobs/>}/>
         <Route path='provprofile' element={<ProvProfile/>}/>
