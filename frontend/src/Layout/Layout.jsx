@@ -11,9 +11,7 @@ import Stacks from '../Pages/providerDashboard/Stackpage/Stacks';
 import Jobpost from '../Pages/consumerDashboard/jobpost/Jobpost';
 import ProvProfile from '../Pages/providerDashboard/provProfile/ProvProfile';
 import Dashboard from '../Pages/Dashboard';
-
-// import '../css/style.css';
-// import '../charts/ChartjsConfig';
+import '../css/style.css'
 
 const Layout = () => {
 
