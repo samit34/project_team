@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import "./App.css";
 
 import Layout from "./Layout/Layout.jsx";
-// import './css/style.css';
-// import './charts/ChartjsConfig.jsx'
+import './css/style.css';
+import './charts/ChartjsConfig.jsx'
 
 
 function App() {
