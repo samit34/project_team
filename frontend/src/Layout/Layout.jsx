@@ -15,7 +15,7 @@ import Showjobs from '../Pages/providerDashboard/Showjobs/Showjobs';
 import Stacks from '../Pages/providerDashboard/Stackpage/Stacks';
 import Jobpost from '../Pages/consumerDashboard/jobpost/Jobpost';
 import ProvProfile from '../Pages/providerDashboard/provProfile/ProvProfile';
-import Dashboard from '../Pages/Dashboard';
+
 // import '../css/style.css'
 
 const Layout = () => {
@@ -24,11 +24,7 @@ const Layout = () => {
   
   const location = useLocation();
 
-  useEffect(() => {
-    document.documentElement.style.scrollBehavior = 'auto';
-    window.scrollTo({ top: 0 });
-    document.documentElement.style.scrollBehavior = '';
-  }, [location.pathname]);
+  
 
   const hideNavbar = location.pathname.startsWith('/providerDash') || location.pathname.startsWith('/ConsumerDash');
 
@@ -38,7 +34,7 @@ const Layout = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/provider" element={<ProviderHome />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+
 
 
         {/* Provider Dashboard Routes */}
