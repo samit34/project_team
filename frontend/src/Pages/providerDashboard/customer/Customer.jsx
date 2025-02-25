@@ -40,7 +40,7 @@ const customers = [
 
 const Customer = () => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 w-[50%]">
+    <div className="bg-white shadow-md rounded-lg p-6 xl:w-[50%] w-full">
       <h2 className="text-lg font-semibold text-gray-800 mb-4">Customers</h2>
       <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse">

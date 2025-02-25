@@ -12,7 +12,7 @@ const data = [
 
 const Overallgrowth = () => {
   return (
-    <div style={{ width: "100%", maxWidth: "50%" }}>
+    <div   className="w-full xl:w-[49%]"  >
     <h3>Direct VS Indirect</h3>
     <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
       <span style={{ color: "#3b82f6", fontSize: "20px", fontWeight: "bold" }}>
@@ -24,7 +24,7 @@ const Overallgrowth = () => {
       </span>
       <span>Indirect</span>
     </div>
-    <BarChart width={570} height={400} data={data} >
+    <BarChart width={520} height={400} data={data} >
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />

@@ -10,7 +10,9 @@ const data = [
 
 const Ratingchart = () => {
   return (
-    <AreaChart width={550} height={400} data={data}
+
+    <div   className="w-full xl:w-[49%]"  >
+    <AreaChart width={520} height={400} data={data}
       >
       <defs>
         <linearGradient id="colorMonthly" x1="0" y1="0" x2="0" y2="1">
@@ -30,6 +32,7 @@ const Ratingchart = () => {
       <Area type="monotone" dataKey="monthlyRating" stroke="#4CAF50" fillOpacity={1} fill="url(#colorMonthly)" />
       <Area type="monotone" dataKey="weeklyRating" stroke="#FF9800" fillOpacity={1} fill="url(#colorWeekly)" />
     </AreaChart>
+    </div>
   );
 };
 

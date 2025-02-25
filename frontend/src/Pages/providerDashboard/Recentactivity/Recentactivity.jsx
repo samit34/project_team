@@ -63,7 +63,7 @@ const activities = [
 
 const Recentactivity = () => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 w-[50%]">
+    <div className="bg-white shadow-md rounded-lg p-6 xl:w-[49%] w-full">
       <h2 className="text-lg font-semibold text-gray-800 mb-4">
         Recent Activity
       </h2>
@@ -75,7 +75,7 @@ const Recentactivity = () => {
             </div>
             {activities
               .filter((activity) => activity.date === date)
-              .map(({ id, icon, text }) => (
+              .map(({ id, icon, text }) =>(
                 <div
                   key={id}
                   className="flex items-center justify-between py-2 border-b last:border-none"
