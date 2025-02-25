@@ -12,7 +12,7 @@ const data = [
 
 const Jobdone = () => {
   return (
-    <div className="bg-white p-6 rounded-2xl shadow-lg lg:w-[32.3%]">
+    <div className="bg-white p-6 rounded-2xl shadow-lg w-full xl:w-[32.3%]">
          {/* Header */}
          <div className="flex justify-between items-center">
            <h2 className="text-gray-800 font-semibold text-lg">JobDone</h2>

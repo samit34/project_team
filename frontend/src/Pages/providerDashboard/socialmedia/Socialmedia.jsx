@@ -50,7 +50,7 @@ const channels = [
 
 const Socialmedia = () => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 lg:w-[64%] w-full " >
+    <div className="bg-white shadow-md rounded-lg p-6 xl:w-[64%] w-full " >
       <h2 className="text-lg font-semibold text-gray-800 mb-4">Top Channels</h2>
       <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse">

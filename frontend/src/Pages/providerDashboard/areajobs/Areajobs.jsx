@@ -11,7 +11,7 @@ const COLORS = ["#A085FF", "#6EC4FF", "#322A7D"];
 
 const Areajobs = () => {
   return (
-    <div     className="lg:w-[35%] w-full "  style={{  height: 300, background: "white", borderRadius:"10px" }}>
+    <div     className="xl:w-[35%] w-full "  style={{  height: 300, background: "white", borderRadius:"10px" }}>
       <h3 style={{ textAlign: "left", marginLeft: "10px" }}>Top Countries</h3>
       <ResponsiveContainer>
         <PieChart>
