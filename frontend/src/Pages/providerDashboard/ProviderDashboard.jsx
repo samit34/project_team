@@ -7,7 +7,9 @@ import { Outlet, Link } from "react-router-dom";
 const ProviderDashboard = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
+  
     <div className="flex h-screen bg-gray-100">
+     
       {/* Sidebar (Offcanvas) */}
       <div
         className={`fixed inset-y-0 left-0 z-50 w-64 bg-slate-100 shadow-md transform ${isOpen ? "translate-x-0" : "-translate-x-full"
@@ -68,13 +70,7 @@ const ProviderDashboard = () => {
       </div>
 
       <Outlet />
-      {/* <div className="flex-1 flex flex-col">
       
-        <header className="flex items-center justify-between p-4 bg-white shadow-md">
-          <Menu className="w-6 h-6 cursor-pointer md:hidden" onClick={() => setIsOpen(true)} />
-          <h1 className="text-2xl font-bold">Provider Dashboard</h1>
-        </header>
-      </div> */}
     </div>
   );
 }
