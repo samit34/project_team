@@ -16,6 +16,7 @@ import Stacks from '../Pages/providerDashboard/Stackpage/Stacks';
 import Jobpost from '../Pages/consumerDashboard/jobpost/Jobpost';
 
 import MyProfile from '../Pages/providerDashboard/myProfile/MyProfile';
+import Dashboard from '../Pages/providerDashboard/dashboard/Dashboard';
 
 const Layout = () => {
 
@@ -42,16 +43,18 @@ const Layout = () => {
 
         {/* Provider Dashboard Routes */}
         <Route path="/providerDash" element={<ProviderDashboard />}>
-          <Route index element={<Showjobs />} />
+          <Route path='showjobs' element={<Showjobs />} />
           <Route path="myprofile" element={<MyProfile/>} />
           <Route path="stackpage" element={<Stacks />} />
-
+          <Route path="dashboard" element={<Dashboard />} />
         </Route>
 
         {/* Consumer Dashboard Routes */}
         <Route path="/ConsumerDash" element={<ConsumerDashbord />}>
           <Route index element={<Jobpost />} />
           <Route path="stackpage" element={<Stacks />} />
+         
+
         </Route>
       </Routes>
     </>

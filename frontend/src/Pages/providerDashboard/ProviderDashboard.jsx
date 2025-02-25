@@ -31,7 +31,7 @@ const ProviderDashboard = () => {
           <Link to="/providerDash" className="flex items-center p-4 hover:bg-gray-200">
             <NotebookPen className="w-5 h-5 mr-3" /> My Jobs
           </Link>
-          <Link to="/providerDash/stackpage" className="flex items-center p-4 hover:bg-gray-200">
+          <Link to="/providerDash/dashboard" className="flex items-center p-4 hover:bg-gray-200">
             <LayoutDashboard className="w-5 h-5 mr-3" /> Dashboard
           </Link>
 
