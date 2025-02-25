@@ -8,6 +8,7 @@ const Dashboard = () => {
   return (
    <> 
    <div  className='w-full p-10' >
+    <div className="exp"></div>
    <div className='flex gap-4 justify-center ' >
 <Eraning/>
 <Showjobs/>
