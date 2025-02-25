@@ -33,7 +33,6 @@ const Home = () => {
       <Centertwo/>
       <AllServiceList/>
       <HighRnkSerProvider/>
-
 <Centerthree/>
   <Footer/>
 
