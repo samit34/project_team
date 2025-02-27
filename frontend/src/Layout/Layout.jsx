@@ -17,6 +17,7 @@ import Jobpost from '../Pages/consumerDashboard/jobpost/Jobpost';
 
 import MyProfile from '../Pages/providerDashboard/myProfile/MyProfile';
 import Dashboard from '../Pages/providerDashboard/dashboard/Dashboard';
+import ProfilePopup from '../Pages/providerDashboard/myProfile/profile_comp/ProfilePopup';
 
 const Layout = () => {
 
@@ -47,6 +48,7 @@ const Layout = () => {
           <Route path="myprofile" element={<MyProfile/>} />
           <Route path="stackpage" element={<Stacks />} />
           <Route path="dashboard" element={<Dashboard />} />
+          <Route path="task" element={<ProfilePopup/>} />
         </Route>
 
         {/* Consumer Dashboard Routes */}
