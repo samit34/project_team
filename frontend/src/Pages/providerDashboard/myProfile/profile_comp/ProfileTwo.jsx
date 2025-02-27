@@ -3,7 +3,7 @@ import React from "react";
 
 const ProfileTwo = () => {
     return (
-        <div className="p-4 md:p-8 bg-gray-100 min-h-screen">
+        <div className="p-4 md:p-8 bg-gray-100 ">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
                 {/* Profile Section */}
                

@@ -1,0 +1,5 @@
+/* Remove Scrollbar Arrows */
+.sc::-webkit-scrollbar-button {
+    display: none;
+  }
+  
