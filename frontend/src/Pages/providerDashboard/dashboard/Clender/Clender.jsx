@@ -6,6 +6,9 @@ import "./Clender.css";
 function Clender() {
     const [confirmedBookings, setConfirmedBookings] = useState([
         { date: "2025-03-01", status: "confirmed" },
+        { date: "2025-03-03", status: "confirmed" },
+        { date: "2025-03-05", status: "confirmed" },
+        { date: "2025-03-09", status: "confirmed" },
         { date: "2025-03-05", status: "pending" }
     ]);
     const [pendingBookings, setPendingBookings] = useState([]);
@@ -19,11 +22,16 @@ function Clender() {
             });
     }, []);
 
+    // Format date to avoid timezone shifts
+    const formatDate = (date) => {
+        return date.toLocaleDateString("en-CA"); // Format YYYY-MM-DD
+    };
+
     const isConfirmed = (date) => 
-        confirmedBookings.some(booking => booking.date === date.toISOString().split("T")[0]);
+        confirmedBookings.some(booking => booking.date === formatDate(date));
 
     const isPending = (date) => 
-        pendingBookings.some(booking => booking.date === date.toISOString().split("T")[0]);
+        pendingBookings.some(booking => booking.date === formatDate(date));
 
     return (
         <div>
