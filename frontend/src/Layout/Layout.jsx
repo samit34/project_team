@@ -21,6 +21,7 @@ import Dashboard from '../Pages/providerDashboard/dashboard/Dashboard';
 import ProfilePopup from '../Pages/providerDashboard/myProfile/profile_comp/ProfilePopup';
 
 import Clender from '../Pages/providerDashboard/dashboard/Clender/Clender';
+import Chat from '../Components/chat/Chat';
 
 
 const Layout = () => {
@@ -44,7 +45,7 @@ const Layout = () => {
         <Route path="/" element={<Home />} />
         <Route path="/provider" element={<ProviderHome />} />
         {/* <Route path="/dashboard" element={<Dashboard />} /> */}
-
+         <Route path='/chat' element={<Chat/>} />
 
         {/* Provider Dashboard Routes */}
         <Route path="/providerDash" element={<ProviderDashboard />}>
