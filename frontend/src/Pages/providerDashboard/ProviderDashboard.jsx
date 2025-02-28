@@ -13,12 +13,12 @@ const ProviderDashboard = () => {
       {/* Sidebar (Offcanvas) */}
       <div
         className={`fixed inset-y-0 left-0 z-50 w-64 bg-slate-100 shadow-md transform ${isOpen ? "translate-x-0" : "-translate-x-full"
-          } transition-transform duration-300 md:relative md:translate-x-0 md:flex md:flex-col`}
+          } transition-transform duration-300 lg:relative lg:translate-x-0 lg:flex lg:flex-col`}
       >
         <div className="flex items-center justify-between p-4 border-b">
           <h2 className="text-xl font-semibold">Provider Dashboard</h2>
           <X
-            className="w-6 h-6 cursor-pointer md:hidden"
+            className="w-6 h-6 cursor-pointer lg:hidden"
             onClick={() => setIsOpen(false)}
           />
         </div>
@@ -71,7 +71,7 @@ const ProviderDashboard = () => {
       <div className="flex-1 flex flex-col ">
         {/* Navbar */}
         <header className="flex items-center justify-between p-4 bg-white shadow-md">
-          <Menu className="w-6 h-6 cursor-pointer md:hidden" onClick={() => setIsOpen(true)} />
+          <Menu className="w-6 h-6 cursor-pointer lg:hidden" onClick={() => setIsOpen(true)} />
           <h1 className="text-2xl font-bold">Provider Dashboard</h1>
         </header>
 

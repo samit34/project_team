@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Pencil } from "lucide-react";
 import { PencilSquareIcon } from '@heroicons/react/24/outline';
 
+
 import ProfilePopup from './ProfilePopup.jsx';
 
 const ProfileCard = () => {
@@ -18,17 +19,18 @@ const ProfileCard = () => {
                     <div>
                         <h2 className="text-lg font-semibold">Personal Information</h2>
                     </div>
-
-                    <div className="p-6">
+                    <div className="">
                         {/* Pencil Button */}
-                        <button onClick={() => setOpen(true)} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300">
-                            <PencilSquareIcon className="w-6 h-6 text-gray-600" />
+                        <button onClick={() => setOpen(true)} className=" py-2 px-3 flex gap-2 items-center bg-gray-200 rounded-full hover:bg-gray-300">
+
+                            <Pencil size={16} />
+                            <span className='max-sm:hidden md:flex'>Edit</span>
                         </button>
                         <ProfilePopup open={open} setOpen={setOpen} />
-
                     </div>
-
-
+                </div>
+                <div className='w-20 h-20 my-5'>
+                    <img src="/assets/img.jpg" alt="" className='w-20 h-20   object-cover rounded-full' />
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                     <div>
@@ -47,21 +49,32 @@ const ProfileCard = () => {
                         <p className="text-sm text-gray-500">Phone</p>
                         <p className="font-medium">+09 363 398 46</p>
                     </div>
-                    <div className="md:col-span-2">
+                    <div>
+                        <p className="text-sm text-gray-500">Pan No.</p>
+                        <p className="font-medium">539537538753875</p>
+                    </div>
+                    <div className="">
                         <p className="text-sm text-gray-500">Bio</p>
-                        <p className="font-medium">Team Manager</p>
+                        <p className="font-medium">Plumber</p>
+                    </div>
+                    <div className="md:col-span-2">
+                        <p className="text-sm text-gray-500">About</p>
+                        <p className="font-medium">Plumber Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo consequatur sint ipsam, reprehenderit porro minus sequi aperiam debitis ea accusamus labore. Voluptatem?</p>
                     </div>
                 </div>
             </div>
 
-            {/* Address Card */}
+
             <div className="bg-white shadow-md rounded-lg p-6 md:p-8 w-full">
                 <div className="flex justify-between items-start">
                     <h2 className="text-lg font-semibold">Address</h2>
-                    <button className="flex items-center gap-2 text-gray-600 hover:text-gray-800">
-                        <Pencil size={16} />
-                        Edit
-                    </button>
+                    <div className="">
+                        <button onClick={() => setOpen(true)} className=" py-2 px-3 flex gap-2 items-center bg-gray-200 rounded-full hover:bg-gray-300">
+                            <Pencil size={16} />
+                            <span className='max-sm:hidden md:flex'>Edit</span>
+                        </button>
+                        <ProfilePopup open={open} setOpen={setOpen} />
+                    </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                     <div>
@@ -91,101 +104,3 @@ const ProfileCard = () => {
 export default ProfileCard;
 
 
-
-
-
- {/* <div>
-              <button className="flex items-center gap-2 text-gray-600 hover:text-gray-800 " onClick={() => setOpen(true)}>
-              
-                <Pencil size={16} />
-                Edit
-              </button>
-                
-      <ProfilePopup open={open} setOpen={setOpen} />
-              </div> */}
-
-
-// import React, { useState } from 'react';
-// import ProfilePopup from './ProfilePopup'; // Import the modal component
-
-// const ParentComponent = () => {
-//   const [open, setOpen] = useState(false); // State to control modal visibility
-
-//   return (
-//     <div className="p-6">
-//       {/* Pencil Button */}
-//       <button onClick={() => setOpen(true)} className="p-2 bg-gray-200 rounded-full hover:bg-gray-300">
-//         <PencilSquareIcon className="w-6 h-6 text-gray-600" />
-//       </button>
-
-   
-//     </div>
-//   );
-// };
-
-// export default ParentComponent;
-
-
-// return (
-//     <div className="p-4 md:p-8 bg-gray-100 min-h-screen flex flex-col gap-6">
-//       {/* Personal Information Card */}
-//       <div className="bg-white shadow-md rounded-lg p-6 md:p-8">
-//         <div className="flex justify-between items-start mb-4">
-//           <h2 className="text-xl font-semibold">Personal Information</h2>
-//           <button className="flex items-center gap-1 text-gray-600 hover:text-gray-900">
-//             <FaEdit /> Edit
-//           </button>
-//         </div>
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-//           <div>
-//             <p className="text-gray-500 text-sm">First Name</p>
-//             <p className="font-medium">Chowdury</p>
-//           </div>
-//           <div>
-//             <p className="text-gray-500 text-sm">Last Name</p>
-//             <p className="font-medium">Musharof</p>
-//           </div>
-//           <div>
-//             <p className="text-gray-500 text-sm">Email Address</p>
-//             <p className="font-medium">randomuser@pimjo.com</p>
-//           </div>
-//           <div>
-//             <p className="text-gray-500 text-sm">Phone</p>
-//             <p className="font-medium">+09 363 398 46</p>
-//           </div>
-//           <div className="col-span-2">
-//             <p className="text-gray-500 text-sm">Bio</p>
-//             <p className="font-medium">Team Manager</p>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Address Card */}
-//       <div className="bg-white shadow-md rounded-lg p-6 md:p-8">
-//         <div className="flex justify-between items-start mb-4">
-//           <h2 className="text-xl font-semibold">Address</h2>
-//           <button className="flex items-center gap-1 text-gray-600 hover:text-gray-900">
-//             <FaEdit /> Edit
-//           </button>
-//         </div>
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-//           <div>
-//             <p className="text-gray-500 text-sm">Country</p>
-//             <p className="font-medium">United States</p>
-//           </div>
-//           <div>
-//             <p className="text-gray-500 text-sm">City/State</p>
-//             <p className="font-medium">Arizona, United States</p>
-//           </div>
-//           <div>
-//             <p className="text-gray-500 text-sm">Postal Code</p>
-//             <p className="font-medium">ERT 2489</p>
-//           </div>
-//           <div>
-//             <p className="text-gray-500 text-sm">TAX ID</p>
-//             <p className="font-medium">AS4568384</p>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
