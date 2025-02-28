@@ -8,21 +8,25 @@ const stats = [
   
   const ProviderStats = () => {
     return (
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-            {stats.map((stat) => (
-              <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
-                <dt className="text-base/7 text-gray-600">{stat.name}</dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                  {stat.value}
-                </dd>
-              </div>
-            ))}
-          </dl>
-        </div>
+
+
+      <section className="prv-statics">
+      
+      <div className="prv-static-container ">
+          <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-6">
+          {stats.map((stat) => (
+                  <div  key={stat.id} className="bg-white rounded-lg shadow-md p-6 text-center">
+                      <h3 className="text-2xl font-semibold text-blue-600">{stat.value}</h3>
+                      <p className="text-gray-600">{stat.name}  </p> 
+                  </div>
+                   ))}
+          </div>
       </div>
+    </section>
+      
     )
   }
   
   export default ProviderStats
+
+ 

@@ -21,7 +21,7 @@ const ProfileTwo = () => {
                                 <tr className="bg-gray-100">
                                     <th className="p-3 text-left">#</th>
                                     <th className="p-3 text-left">Clients</th>
-                                    <th className="p-3 text-left">Project Name</th>
+                                    <th className="p-3 text-left">To Do</th>
                                     <th className="p-3 text-left">Start Date</th>
                                     <th className="p-3 text-left">Due Date</th>
                                     <th className="p-3 text-left">Status</th>
@@ -31,10 +31,10 @@ const ProfileTwo = () => {
                                 <tr className="border-t">
                                     <td className="p-3">1</td>
                                     <td className="p-3">Halette Boivin</td>
-                                    <td className="p-3">App design and development</td>
+                                    <td className="p-3">doing tap work</td>
                                     <td className="p-3">01/01/2022</td>
-                                    <td className="p-3">10/12/2023</td>
-                                    <td className="p-3"><span className="bg-blue-500 text-white px-2 py-1 rounded-lg text-xs">Work</span></td>
+                                    <td className="p-3">02/2/2022</td>
+                                    <td className="p-3"><span className="bg-gray-400 text-white px-2 py-1 rounded-lg text-xs">Done</span></td>
                                 </tr>
                             </tbody>
                         </table>
