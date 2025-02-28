@@ -19,26 +19,20 @@ const ProfileCard = () => {
                     <div>
                         <h2 className="text-lg font-semibold">Personal Information</h2>
                     </div>
-
                     <div className="">
                         {/* Pencil Button */}
                         <button onClick={() => setOpen(true)} className=" py-2 px-3 flex gap-2 items-center bg-gray-200 rounded-full hover:bg-gray-300">
-                           
+
                             <Pencil size={16} />
-                     <span className='max-sm:hidden md:flex'>Edit</span>
+                            <span className='max-sm:hidden md:flex'>Edit</span>
                         </button>
                         <ProfilePopup open={open} setOpen={setOpen} />
-
                     </div>
-
-
                 </div>
                 <div className='w-20 h-20 my-5'>
-                    <img src="/assets/img.jpg" alt="" className='w-20 h-20   object-cover rounded-full'/>
-                  
-                  </div>
+                    <img src="/assets/img.jpg" alt="" className='w-20 h-20   object-cover rounded-full' />
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                  
                     <div>
                         <p className="text-sm text-gray-500">First Name</p>
                         <p className="font-medium">Chowdury</p>
@@ -70,24 +64,17 @@ const ProfileCard = () => {
                 </div>
             </div>
 
-        
+
             <div className="bg-white shadow-md rounded-lg p-6 md:p-8 w-full">
                 <div className="flex justify-between items-start">
                     <h2 className="text-lg font-semibold">Address</h2>
-
                     <div className="">
-                        
                         <button onClick={() => setOpen(true)} className=" py-2 px-3 flex gap-2 items-center bg-gray-200 rounded-full hover:bg-gray-300">
-                           
                             <Pencil size={16} />
-                     <span className='max-sm:hidden md:flex'>Edit</span>
+                            <span className='max-sm:hidden md:flex'>Edit</span>
                         </button>
                         <ProfilePopup open={open} setOpen={setOpen} />
-
                     </div>
-
-
-                   
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                     <div>

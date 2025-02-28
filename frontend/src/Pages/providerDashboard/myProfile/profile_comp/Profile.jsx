@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../../../../../public/assets/img.jpg'
+import img from '/assets/img.jpg'
 import { FaStar } from "react-icons/fa";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
 import { IoMdDoneAll } from "react-icons/io";
@@ -16,7 +16,7 @@ const data = [
 const Profile = () => {
     return (
         <>
-            <div className="bg-gray-50 py-2 pb-5 mx-auto max-w-6xl">
+            <div className=" py-2 pb-5 mx-auto max-w-6xl 2xl:max-w-full">
                 {/* mx-auto max-w-2xl lg:max-w-7xl  */}
                 <div className="px-6 lg:px-8 ">
 
@@ -25,7 +25,7 @@ const Profile = () => {
                             <div className="absolute inset-px rounded-lg bg-white "></div>
                             <div className="relative flex h-full flex-col overflow-hidden rounded-lg lg:rounded-lg">
                                 {/* add pb-3 sm:px-10 sm:pt-10 sm:pb-0 px-8 */}
-                                <div className="flex flex-col items-center text-center mx-auto px-10 md:px-10 lg:px-12 pt-8 ">
+                                <div className="flex flex-col items-center text-center mx-auto w-44 h-44 px-4 pt-8 ">
                                     <img
                                         src={img}
                                         alt="Profile"
@@ -41,7 +41,7 @@ const Profile = () => {
 
                                 </div>
                                 <div className="px-8 pt-2 pb-3 sm:px-10 sm:pt-2 sm:pb-0 text-left">
-                                    <div className="text-left w-full mt-6">
+                                    <div className="text-left w-full mt-6 ">
                                         <p className="mt-2  text-md font-medium tracking-tight max-lg:text-center text-[#6C757D] uppercase pb-2">
                                             About Me :
                                         </p>
