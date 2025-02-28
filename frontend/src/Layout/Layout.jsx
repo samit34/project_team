@@ -21,6 +21,7 @@ import Dashboard from '../Pages/providerDashboard/dashboard/Dashboard';
 import ProfilePopup from '../Pages/providerDashboard/myProfile/profile_comp/ProfilePopup';
 
 import Clender from '../Pages/providerDashboard/dashboard/Clender/Clender';
+import ServiceListScreen from '../Pages/serviceListScreen/ServiceListScreen';
 
 
 const Layout = () => {
@@ -43,6 +44,7 @@ const Layout = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/provider" element={<ProviderHome />} />
+        <Route path='/servscreen' element={<ServiceListScreen/>}/>
         {/* <Route path="/dashboard" element={<Dashboard />} /> */}
 
 
