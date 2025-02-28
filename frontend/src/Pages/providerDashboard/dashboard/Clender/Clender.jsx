@@ -9,7 +9,7 @@ function Clender() {
         { date: "2025-03-03", status: "confirmed" },
         { date: "2025-03-05", status: "confirmed" },
         { date: "2025-03-09", status: "confirmed" },
-        { date: "2025-03-05", status: "pending" }
+        { date: "2025-03-05", status: "pending"}
     ]);
     const [pendingBookings, setPendingBookings] = useState([]);
 
