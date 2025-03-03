@@ -30,7 +30,7 @@ const Chat = () => {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
+    <div style={{padding: '20px'}}>
       <div>
         <input
           type="text"
