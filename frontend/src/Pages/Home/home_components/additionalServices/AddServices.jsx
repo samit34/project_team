@@ -13,7 +13,9 @@ const AddServices = () => {
                         <div className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-6">
                             <div className="flex flex-row space-x-14 sm:space-x-10">
                                 <div className="w-1/2">
+                                    <div className="w-16 h-16">
                                     <img src="./assets/addser1.png" alt="" className='w-16 h-16 img-fluid' />
+                                    </div>
                                 </div>
                                 <div className="w-1/2 pl-2">
                                     <p className='text-[12px]'>FROM $399</p>
@@ -32,7 +34,9 @@ const AddServices = () => {
                         <div className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-6">
                             <div className="flex flex-row space-x-14 sm:space-x-10">
                                 <div className="w-1/2">
+                                <div className="w-16 h-16">
                                     <img src="./assets/addser5.png" alt="" className='w-16 h-16 img-fluid' />
+                                    </div>
                                 </div>
                                 <div className="w-1/2 pl-2">
                                     <p className='text-[12px]'>FROM $499</p>
@@ -50,7 +54,9 @@ const AddServices = () => {
                         <div className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-6">
                             <div className="flex flex-row space-x-14 sm:space-x-10">
                                 <div className="w-1/2">
+                                <div className="w-16 h-16">
                                     <img src="./assets/addser3.png" alt="" className='w-16 h-16 img-fluid' />
+                                    </div>
                                 </div>
                                 <div className="w-1/2 pl-2">
                                     <p className='text-[12px]'>FROM $699</p>
@@ -68,7 +74,9 @@ const AddServices = () => {
                         <div className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-6">
                             <div className="flex flex-row space-x-14 sm:space-x-10">
                                 <div className="w-1/2">
+                                <div className="w-16 h-16">
                                     <img src="./assets/addser1.png" alt="" className='w-16 h-16 img-fluid' />
+                                    </div>
                                 </div>
                                 <div className="w-1/2 pl-2">
                                     <p className='text-[12px]'>FROM $399</p>
@@ -86,7 +94,9 @@ const AddServices = () => {
                         <div className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-6">
                             <div className="flex flex-row space-x-14 sm:space-x-10">
                                 <div className="w-1/2">
+                                <div className="w-16 h-16">
                                     <img src="./assets/addser6.png" alt="" className='w-16 h-16 img-fluid' />
+                                    </div>
                                 </div>
                                 <div className="w-1/2 pl-2">
                                     <p className='text-[12px]'>FROM $399</p>
@@ -104,7 +114,9 @@ const AddServices = () => {
                         <div className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-6">
                             <div className="flex flex-row space-x-14 sm:space-x-10">
                                 <div className="w-1/2">
+                                <div className="w-16 h-16">
                                     <img src="./assets/addser7.png" alt="" className='w-16 h-16 img-fluid' />
+                                    </div>
                                 </div>
                                 <div className="w-1/2 pl-2">
                                     <p className='text-[12px]'>FROM $399</p>
@@ -122,7 +134,9 @@ const AddServices = () => {
                         <div className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-6">
                             <div className="flex flex-row space-x-14 sm:space-x-10">
                                 <div className="w-1/2">
+                                <div className="w-16 h-16">
                                     <img src="./assets/addser8.png" alt="" className='w-16 h-16 img-fluid' />
+                                    </div>
                                 </div>
                                 <div className="w-1/2 pl-2">
                                     <p className='text-[12px]'>FROM $399</p>
@@ -140,7 +154,9 @@ const AddServices = () => {
                         <div className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-6">
                             <div className="flex flex-row space-x-14 sm:space-x-10">
                                 <div className="w-1/2">
+                                <div className="w-16 h-16">
                                     <img src="./assets/addser1.png" alt="" className='w-16 h-16 img-fluid' />
+                                    </div>
                                 </div>
                                 <div className="w-1/2 pl-2">
                                     <p className='text-[12px]'>FROM $399</p>
