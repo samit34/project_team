@@ -1,55 +1,31 @@
-// const express = require('express');
-
-// const app = express();
-// app.use (express.json());
-// const {connectDB} = require('./config/db');
-// require("dotenv").config();
-
-
-// connectDB();
-
-// app.get('/', (req, res) => {
-//   res.send('Hello Wadncbhaesfkgedcyufbasorld');
-// });    
-
-
-
-// app.listen(process.env.PORT, () => {                 
-//   console.log(`Server is running on port ${process.env.PORT}`);
-// }); 
-
-
-
-
-
-
-
-
-
 const express = require('express');
 const app = express();
-app.use(express.json());
-
+const cors = require("cors");
 const { connectDB } = require('./config/db');
 require('dotenv').config();
+const userRoute = require("./route/userroute")
 
+
+app.use(express.json());
+ 
+app.use(cors());
 connectDB();
 
-// Basic route for testing
-app.get('/', (req, res) => {
-  res.send('Hello Wadncbhaesfkgedcyufbasorld');
-});
+
 
 // Create an HTTP server from the Express app
 const http = require('http');
 const server = http.createServer(app);
 
+
+app.use('/user', userRoute )
+
+
 // Set up Socket.IO on the HTTP server with CORS enabled
 const { Server } = require('socket.io');
 const io = new Server(server, {
   cors: {
-    origin: "*", // Adjust for production
-    methods: ["GET", "POST"]
+  
   }
 });
 
