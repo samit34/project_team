@@ -69,7 +69,7 @@ import InnerPageOne from '../Pages/Home/home_innerPages/innerpage/InnerPageOne';
           {/* Consumer Dashboard Routes */}
           <Route path="/ConsumerDash" element={<ConsumerDashbord />}>
             <Route index element={<Jobpost />} />
-            <Route path="stackpage" element={<Stacks />} />
+            <Route path="stackpage" element={<Stacks />}/>
           </Route>
         </Routes>
       </>
