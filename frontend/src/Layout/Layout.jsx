@@ -39,25 +39,10 @@ import InnerPageOne from '../Pages/Home/home_innerPages/innerpage/InnerPageOne';
       <>
         {!hideNavbar && <Navbar />}
         <Routes>
-          {/* <Route path="/" element={<Home />} />
-        <Route path="/provider" element={<ProviderHome />} />
-        <Route path='/servscreen' element={<ServiceListScreen />} />
-        <Route path='/chat' element={<Chat />} /> */}
-
-
-
-
-          {/* Provider Dashboard Routes */}
-          {/* <Route path="/providerDash" element={<ProviderDashboard />}>
-          <Route path='showjobs' element={<Showjobs />} />
-          <Route path="myprofile" element={<MyProfile />} />
-          <Route path="stackpage" element={<Stacks />} />
-          <Route path="dashboard" element={<Dashboard />} />
-          <Route path="task" element={<ProfilePopup />} />
-          <Route path="clender" element={<Clender />} /> */}
+         
           <Route path='/loging' element={<Login />} />
           <Route path='/signupg' element={<Signup />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
 
           <Route path="/homeInone/:CategoryName" element={<HomeInOne />}>
             <Route path=':subcategory' element={<InnerPageOne />} />
