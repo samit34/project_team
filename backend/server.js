@@ -50,14 +50,19 @@ io.on('connection', (socket) => {
   const userId = socket.handshake.auth.userId; // Receiver's ID
   console.log("Receiver ID:", userId);
 
-  if (userId) {
-    users[userId] = socket.id; // Map receiver's ID to socket ID
+  if (senderId) {
+    users[senderId] = socket.id; // Map receiver's ID to socket ID
   }
 
   console.log("Active users:", users);
 
   // Fetch chat history
-  Message.find({ sender: senderId, receiver: userId })
+  Message.find({ 
+    $or: [
+      { sender: senderId, receiver: userId }, 
+      { sender: userId, receiver: senderId } // ✅ Fetch both sender and receiver messages
+    ] 
+  })
     .sort({ createdAt: 1 })
     .then(messages => {
       socket.emit('chatHistory', messages);
@@ -80,7 +85,10 @@ io.on('connection', (socket) => {
       if (receiverSocketId) {
         io.to(receiverSocketId).emit("receiveMessage", newMessage);
       }
-    } catch (err) {
+
+      io.to(socket.id).emit("receiveMessage", newMessage);
+      
+    } catch (err){
       console.error('Error saving message:', err);
     }
   });
