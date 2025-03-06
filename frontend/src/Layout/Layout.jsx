@@ -28,6 +28,7 @@ import Chat from '../Components/chat/Chat';
 import Login from '../Pages/Login/Login';
 import Private from '../Auth/Private'
 import Signup  from '../Pages/Signup/Signup';
+import Chatuser from '../Pages/chatuser/Chatuser';
 
 const Layout = () => {
   const location = useLocation();
@@ -46,7 +47,7 @@ const Layout = () => {
         <Route path="/home" element={<Home />} />
     
         <Route path='/servscreen' element={<ServiceListScreen/>}/>
-         <Route path='/chat' element={<Chat/>} />
+       
         {/* Provider Dashboard Routes */}
         <Route  path='/provider'  element={  <ProviderHome /> } /> 
         <Route path="/providerDash" element={<Private requiredRole="professional" > <ProviderDashboard/> </Private> }>
@@ -57,6 +58,8 @@ const Layout = () => {
           <Route path="dashboard" element={  <Private requiredRole="professional" > <Dashboard /> </Private> } />
           <Route path="task" element={ <Private> <ProfilePopup/> </Private> } />
           <Route path="clender" element={ <Private> <Clender/> </Private>} />
+          <Route path="messages" element={ <Private> <Chatuser/> </Private>} />
+          <Route path="chat/:id" element={<Chat/>}/>
         </Route>
         {/* Consumer Dashboard Routes */}
         <Route path="/ConsumerDash" element={<ConsumerDashbord />}>

@@ -56,9 +56,9 @@ const ProviderDashboard = () => {
 
             <UserRoundCheck className="w-5 h-5 mr-3" />Job Board
           </Link>
-          <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
+          <Link to="/providerDAsh/messages" className="flex items-center p-4 hover:bg-gray-200">
 
-            <MessageCircle className="w-5 h-5 mr-3" />Message
+            <MessageCircle className="w-5 h-5 mr-3" />Mestrm hgsage
           </Link>
           <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
             <Settings className="w-5 h-5 mr-3" /> Settings

@@ -1,69 +1,70 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { io } from 'socket.io-client';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import io from 'socket.io-client';
+
 
 const Chat = () => {
-  const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  // Create a ref to store the socket instance
-  const socketRef = useRef();
+  const [inputMessage, setInputMessage] = useState("");
+   const {id} = useParams()
+   const token = localStorage.getItem("token");
+   console.log("token" , token)
+const socket = io("http://localhost:8000" , {
+  auth: {
+    token: token,
+    userId: id
+  }
+});
+
 
   useEffect(() => {
-    // Connect to the Socket.IO server (adjust the URL if needed)
-    socketRef.current = io('http://localhost:8000');
-
-    // Listen for messages from the server
-    socketRef.current.on('message', (msg) => {
-      setMessages((prevMessages) => [...prevMessages, msg]);
+    // Listen for chat history when connection is established
+    socket.on('chatHistory', (history) => {
+      setMessages(history);
     });
 
-    // Cleanup the connection when component unmounts
-    return () => {
-      socketRef.current.disconnect();
-    };
-  },[]);
+    // Listen for new messages
+    socket.on('receiveMessage', (message) => {
+      setMessages(prevMessages => [...prevMessages, message]);
+    });
 
-  const sendMessage = () => {
-    if (message.trim() !== '') {
-      socketRef.current.emit('message', message);
-      setMessage('');
-    }
+    return () => {
+      socket.off('chatHistory');
+      socket.off('receiveMessage');
+    };
+  }, []);
+
+  const handleSendMessage = () => {
+    if (!inputMessage.trim()) return;
+   
+
+    const newMsg = {
+       receiver: id,
+      text: inputMessage,
+    };
+    socket.emit('sendMessage', newMsg);
+
+    console.log(newMsg)
+    setInputMessage('');
   };
 
   return (
-    <div style={{padding: '20px'}}>
-      <div>
-        <input
-          type="text"
-          placeholder="Type your message..."
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          onKeyPress={(e) => {
-            if (e.key === 'Enter') sendMessage();
-          }}
-          style={{ width: '300px', padding: '8px' }}
-        />
-        <button onClick={sendMessage} style={{ padding: '8px 16px', marginLeft: '10px' }}>
-          Send
-        </button>
+    <div>
+      <h1>Chat App</h1>
+      <div style={{ height: '300px', overflowY: 'scroll', border: '1px solid #ccc' }}>
+        {messages.map((msg, idx) => (
+          <div key={idx}>
+            <strong>{msg.sender}: </strong> {msg.text}
+          </div>
+        ))}
       </div>
-      <div style={{ marginTop: '20px' }}>
-        <h2>Messages</h2>
-        <ul style={{ listStyle: 'none', padding: 0 }}>
-          {messages.map((msg, index) => (
-            <li
-              key={index}
-              style={{
-                marginBottom: '5px',
-                padding: '8px',
-                background: '#f1f1f1',
-                borderRadius: '4px'
-              }}
-            >
-              {msg}
-            </li>
-          ))}
-        </ul>
-      </div>
+      <input
+        type="text"
+        value={inputMessage}
+        onChange={(e) => setInputMessage(e.target.value)}
+        placeholder="Type a message..."
+      />
+      <button onClick={handleSendMessage}>Send</button>
     </div>
   );
 };
