@@ -72,7 +72,7 @@ import Chatuser from '../Pages/chatuser/Chatuser';
           {/* Consumer Dashboard Routes */}
           <Route path="/ConsumerDash" element={<ConsumerDashbord />}>
             <Route index element={<Jobpost />} />
-            <Route path="stackpage" element={<Stacks />} />
+            <Route path="stackpage" element={<Stacks />}/>
           </Route>
         </Routes>
       </>
