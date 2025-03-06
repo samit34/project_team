@@ -1,53 +1,31 @@
-import React from 'react'
-import Heading from '../../../../Components/heading/Heading'
-import { HiArrowNarrowRight } from "react-icons/hi";
-
-const allService = [
-    {service:"Home Services"},
-    {service:"Personal Services"},
-    {service:"Automotive Services"},
-    {service:"Health and Wellness"},
-    {service:"Business Services"},
-    {service:"Education and Tutoring Services"},
-    {service:"Childcare and Family Services"},
-    {service:"Event and Entertainment Services"},
-    {service:"Real Estate and Property Management"},
-    {service:"Technology and Electronics Services"},
-    {service:"Transport and Logistics"},
-    {service:"LifeStyle and Wellness Coaching"},
-    {service:"Creative and Artistic Services"},
-    {service:"Legal and Financial Services"},
-    {service:"Security Services"},
-    {service:"Pet Services"},
-    {service:"Outdoor and Adventure Services"},
-]
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import servicesData from '../../home_innerPages/homeIn';
+import Heading from '../../../../Components/heading/Heading';
 
 const AllServiceList = () => {
   return (
     <section className="adds-section">
-                <Heading props='All Services' />
-                <div className="adds-container ">
-                    <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                        {allService.map((services, index) =>(
-                        <div key={index} className="rounded-lg bg-white p-4 pt-10 shadow-md flex flex-col  gap-6">
-                            <div className="flex flex-row space-x-14 sm:space-x-10 w-full space-y-2">
-                                <div className="w-4/5">
-                                <p className='text-sm md:text-base font-[600] '>{services.service}</p>
-                                    
-                                </div>
-                                <div className="w-1/5">
-                                    <p className='w-5 h-5'><HiArrowNarrowRight /></p>
-                                </div>
-                            </div>
-                        </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-  )
-}
+      <Heading props="All Services" />
+      <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {servicesData.map((service, index) => (
+          <Link
+            key={index}
+            to={`/homeInone/${service.category}`}
+            className="rounded-lg bg-white p-4 pt-10 shadow-md flex flex-col gap-6 transition-transform hover:scale-105"
+          >
+            <div className="flex justify-between w-full">
+              <p className="text-sm md:text-base font-semibold">{service.category}</p>
+              <HiArrowNarrowRight className="w-5 h-5" />
+            </div>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+};
 
-export default AllServiceList
-
+export default AllServiceList;
 
 
