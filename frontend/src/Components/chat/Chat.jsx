@@ -47,10 +47,12 @@ const Chat = () => {
     socketRef.current.emit('sendMessage', newMsg);
     setInputMessage('');
   };
+  
+  
 
   return (
     <div>
-      <h1>Chat App</h1>
+      
       <div style={{ height: '300px', overflowY: 'scroll', border: '1px solid #ccc' }}>
         {messages.map((msg, idx) => (
           <div key={idx}>

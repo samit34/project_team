@@ -59,8 +59,8 @@ import Chatuser from '../Pages/chatuser/Chatuser';
           {/* Provider Dashboard Routes */}
           <Route path='/provider' element={<ProviderHome />} />
           <Route path="/providerDash" element={<Private requiredRole="professional" > <ProviderDashboard /> </Private>}>
-            <Route index element={<Private requiredRole="professional" > <ProviderHome /> </Private>} />
-            <Route path='showjobs' element={<Private requiredRole="professional" > <Showjobs /> </Private>} />
+            {/* <Route index element={<Private requiredRole="professional" > <ProviderHome /> </Private>} /> */}
+            <Route index element={<Private requiredRole="professional" > <Showjobs /> </Private>} />
             <Route path="myprofile" element={<Private requiredRole="professional" > <MyProfile />  </Private>} />
             <Route path="stackpage" element={<Private requiredRole="professional" > <Stacks />    </Private>} />
             <Route path="dashboard" element={<Private requiredRole="professional" > <Dashboard /> </Private>} />

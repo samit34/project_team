@@ -237,7 +237,7 @@ const servicesData = [
       },
       {
         name: "Appliance Repair", link: "ApplianceRepair", userprofile: [
-          {
+         {
             id: 1,
             name: 'Advard john',
             link: '',
@@ -251,7 +251,7 @@ const servicesData = [
             phno: "9876543209"
           },
           {
-            id: 2,
+            id: 2,        
             name: 'Advard john',
             link: '',
             about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, hic!",

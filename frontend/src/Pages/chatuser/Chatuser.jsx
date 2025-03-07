@@ -29,9 +29,6 @@ const dummyUsers = [
 const Chatuser = () => {
   return (
     <div>
-
-      
-  
       {dummyUsers.map((user) => (
         <Link  to={`/providerDash/chat/${user.id}`}  >
         <div 
@@ -51,11 +48,8 @@ const Chatuser = () => {
           <h2>{user.name}</h2>
         </div>
         </Link>
-
       ))}
-     
     </div>
-    
   );
 };
 
