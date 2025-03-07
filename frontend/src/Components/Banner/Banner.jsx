@@ -40,10 +40,10 @@ return (
             loop={true}
         >
             {/* Correctly using images inside slides */}
-            <SwiperSlide><img src='./assets/Banner-image-4.jpg' alt="Banner 1" className="w-full h-auto object-cover" /></SwiperSlide>
-            <SwiperSlide><img src='./assets/Banner-img-1.jpg' alt="Banner 2" className="w-full h-auto object-cover" /></SwiperSlide>
-            <SwiperSlide><img src='./assets/Banner-img-2.jpg' alt="Banner 3" className="w-full h-auto object-cover" /></SwiperSlide>
-            <SwiperSlide><img src='./assets/Banner-img-3.jpg' alt="Banner 4" className="w-full h-auto object-cover" /></SwiperSlide>
+            <SwiperSlide><img src='/assets/Banner-image-4.jpg' alt="Banner 1" className="w-full h-auto object-cover" /></SwiperSlide>
+            <SwiperSlide><img src='/assets/Banner-img-1.jpg' alt="Banner 2" className="w-full h-auto object-cover" /></SwiperSlide>
+            <SwiperSlide><img src='/assets/Banner-img-2.jpg' alt="Banner 3" className="w-full h-auto object-cover" /></SwiperSlide>
+            <SwiperSlide><img src='/assets/Banner-img-1.jpg' alt="Banner 4" className="w-full h-auto object-cover" /></SwiperSlide>
 
             {/* Autoplay Progress Indicator */}
             <div className="autoplay-progress" slot="container-end">
