@@ -1,23 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import io from 'socket.io-client';
-
 
 const Chat = () => {
   const [messages, setMessages] = useState([]);
   const [inputMessage, setInputMessage] = useState("");
-   const {id} = useParams()
-   const token = localStorage.getItem("token");
-   console.log("token" , token)
-const socket = io("http://localhost:8000" , {
-  auth: {
-    token: token,
-    userId: id
-  }
-});
-
+  const { id } = useParams();
+  const token = localStorage.getItem("token");
+  const socketRef = useRef(null);
 
   useEffect(() => {
+    // Initialize socket connection once
+    socketRef.current = io("http://localhost:8000", {
+      auth: { token, userId: id }
+    });
+    
+    const socket = socketRef.current;
+    
     // Listen for chat history when connection is established
     socket.on('chatHistory', (history) => {
       setMessages(history);
@@ -27,24 +26,25 @@ const socket = io("http://localhost:8000" , {
     socket.on('receiveMessage', (message) => {
       setMessages(prevMessages => [...prevMessages, message]);
     });
-
+    
+    // Clean up on unmount
     return () => {
       socket.off('chatHistory');
       socket.off('receiveMessage');
+      socket.disconnect();
     };
   }, []);
 
   const handleSendMessage = () => {
     if (!inputMessage.trim()) return;
-   
 
     const newMsg = {
-       receiver: id,
+      receiver: id,
       text: inputMessage,
     };
-    socket.emit('sendMessage', newMsg);
-
-    console.log(newMsg)
+    
+    // Use the socket from ref to emit message
+    socketRef.current.emit('sendMessage', newMsg);
     setInputMessage('');
   };
 
