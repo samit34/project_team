@@ -15,7 +15,7 @@ const InnerPageOne = () => {
       <div className="py-2 pb-5 mx-auto max-w-6xl 2xl:max-w-full">
         {/* Hero Image Section */}
         <div className="relative w-full">
-          <img src={img} alt="" className="w-full h-48 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg" />
+          <img src={currentCategory.banner} alt="" className="w-full h-48 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg" />
 
           {/* Centered Heading */}
           <div className="absolute inset-1 sm:inset-10 flex items-center justify-start bg-opacity-40">

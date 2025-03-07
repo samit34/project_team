@@ -14,20 +14,14 @@ import ProfilePopup from '../Pages/providerDashboard/myProfile/profile_comp/Prof
 import Clender from '../Pages/providerDashboard/dashboard/Clender/Clender';
 import ServiceListScreen from '../Pages/serviceListScreen/ServiceListScreen';
 import Chat from '../Components/chat/Chat';
-
-
-
 import HomeInOne from '../Pages/Home/home_innerPages/HomeInOne';
 import InnerPageOne from '../Pages/Home/home_innerPages/innerpage/InnerPageOne';
-
-
-
-
-
   import Login from '../Pages/Login/Login';
   import Private from '../Auth/Private'
   import Signup from '../Pages/Signup/Signup';
 import Chatuser from '../Pages/chatuser/Chatuser';
+import UserViewDetails from '../Pages/Home/home_innerPages/innerpage/innercom/UserViewDetails';
+import BookingPage from '../Pages/Home/bookingPage/BookingPage';
 
   const Layout = () => {
 
@@ -51,8 +45,9 @@ import Chatuser from '../Pages/chatuser/Chatuser';
 
           <Route path="/homeInone/:CategoryName" element={<HomeInOne />}>
             <Route path=':subcategory' element={<InnerPageOne />} />
-
           </Route>
+          <Route path='/booking' element={<BookingPage/>}/>
+          <Route path='/userviewdet' element={<UserViewDetails/>}/>
 
           <Route path='/servscreen' element={<ServiceListScreen />} />
         
@@ -69,6 +64,7 @@ import Chatuser from '../Pages/chatuser/Chatuser';
             <Route path="messages" element={<Private> <Chatuser/></Private>} />
             <Route path="chat/:id" element={<Private>  <Chat /></Private>} />
           </Route>
+         
           {/* Consumer Dashboard Routes */}
           <Route path="/ConsumerDash" element={<ConsumerDashbord />}>
             <Route index element={<Jobpost />} />

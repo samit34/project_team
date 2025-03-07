@@ -1,11 +1,13 @@
 import { Ellipsis, X, Home, BookHeart, Car, Factory, Hospital, GraduationCap, Baby, Drama, LandPlot, Cpu, Truck, Hourglass, Palette, Cctv, CircleDollarSign, PawPrint, TentTree } from "lucide-react";
 import profileimg1 from '/assets/profileimg1.jpg'
 import profileimg2 from '/assets/profileimg2.jpg'
+import img from '/assets/Banner-img-1.jpg'
 
 const servicesData = [
   {
     category: "Home Services",
     link: "",
+    banner:img,
     icon: <Home className="w-5 h-5 mr-3" />,
 
     subcategories: [
@@ -584,6 +586,7 @@ const servicesData = [
   },
   {
     category: "Personal Services",
+   banner:img,
     link: "",
     icon: <BookHeart className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -933,6 +936,7 @@ const servicesData = [
   },
   {
     category: "Automotive Services",
+   banner:img,
     link: "/homeInone",
     icon: <Car className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -946,6 +950,7 @@ const servicesData = [
   },
   {
     category: "Business Services",
+   banner:img,
     link: "/homeInone",
     icon: <Factory className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -964,6 +969,7 @@ const servicesData = [
   },
   {
     category: "Health and Wellness",
+   banner:img,
     link: "/homeInone",
     icon: <Hospital className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -977,6 +983,7 @@ const servicesData = [
   },
   {
     category: "Educational and tutoring Services",
+   banner:img,
     link: "/homeInone",
     icon: <GraduationCap className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -992,6 +999,7 @@ const servicesData = [
   },
   {
     category: "Childcare and Family Services",
+   banner:img,
     link: "/homeInone",
     icon: <Baby className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1005,6 +1013,7 @@ const servicesData = [
   },
   {
     category: "Event and Entertainment Services",
+   banner:img,
     link: "/homeInone",
     icon: <Drama className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1019,6 +1028,7 @@ const servicesData = [
   },
   {
     category: "Real Estate and Property Management",
+   banner:img,
     link: "/homeInone",
     icon: <LandPlot className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1032,6 +1042,7 @@ const servicesData = [
   },
   {
     category: "Technologies and electronic services",
+   banner:img,
     link: "/homeInone",
     icon: <Cpu className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1045,6 +1056,7 @@ const servicesData = [
   },
   {
     category: "Transport and logistics",
+   banner:img,
     link: "/homeInone",
     icon: <Truck className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1056,6 +1068,7 @@ const servicesData = [
   },
   {
     category: "LifeStyle and wellness Coaching",
+   banner:img,
     link: "/homeInone",
     icon: <Hourglass className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1068,6 +1081,7 @@ const servicesData = [
   },
   {
     category: "Creative and artistic services",
+   banner:img,
     link: "/homeInone",
     icon: <Palette className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1080,6 +1094,7 @@ const servicesData = [
   },
   {
     category: "Security Services",
+   banner:img,
     link: "/homeInone",
     icon: <Cctv className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1090,6 +1105,7 @@ const servicesData = [
   },
   {
     category: "Legal and Financial Services",
+   banner:img,
     link: "/homeInone",
     icon: <CircleDollarSign className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1101,6 +1117,7 @@ const servicesData = [
   },
   {
     category: "Pet Services",
+   banner:img,
     link: "/homeInone",
     icon: <PawPrint className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1113,6 +1130,7 @@ const servicesData = [
   },
   {
     category: "Outdoor and Adventure Services",
+   banner:img,
     link: "/homeInone",
     icon: <TentTree className="w-5 h-5 mr-3" />,
     subcategories: [

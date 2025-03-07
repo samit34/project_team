@@ -14,12 +14,12 @@ const HomeInOne = () => {
 
 
   const [isOpen, setIsOpen] = useState(false);
-
+// sidebar given
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
       <aside
-        className={`fixed inset-y-0 mt-16 lg:mt-2 left-0 z-50 w-64 bg-slate-100 shadow-md transform ${isOpen ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed inset-y-0 mt-16 lg:mt-2 left-0 z-30 w-64 bg-slate-100 shadow-md transform ${isOpen ? 'translate-x-0' : '-translate-x-full'
           } transition-transform duration-300 lg:relative lg:translate-x-0 lg:flex lg:flex-col`}
       >
         <div className="flex items-center justify-between p-4 border-b">
@@ -54,7 +54,7 @@ const HomeInOne = () => {
         </nav>
       </aside>
 
-      {/* Main Content */}
+      {/* Main Content */} 
       <div className="flex-1 flex flex-col">
         <header className="flex items-center justify-end p-4 bg-blue-300 shadow-md mb-3">
           <h2 className="text-md font-semibold p-2"><CiFilter /></h2>
