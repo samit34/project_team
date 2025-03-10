@@ -36,7 +36,7 @@ const Login = () => {
   const toggleShowPassword = () => setShow((prev) => !prev);
   if (isauth) {
     console.log("login funcationis trigger");
-    return <Navigate to="/home" />; // Redirect if already logged in
+    return <Navigate to="/" />; // Redirect if already logged in
   }
   return (
     <>

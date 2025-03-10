@@ -55,10 +55,10 @@ import BookingPage from '../Pages/Home/bookingPage/BookingPage';
           <Route path='/provider' element={<ProviderHome />} />
           <Route path="/providerDash" element={<Private requiredRole="professional" > <ProviderDashboard /> </Private>}>
             {/* <Route index element={<Private requiredRole="professional" > <ProviderHome /> </Private>} /> */}
-            <Route index element={<Private requiredRole="professional" > <Showjobs /> </Private>} />
+            <Route path="jobs" element={<Private requiredRole="professional" > <Showjobs /> </Private>} />
             <Route path="myprofile" element={<Private requiredRole="professional" > <MyProfile />  </Private>} />
             <Route path="stackpage" element={<Private requiredRole="professional" > <Stacks />    </Private>} />
-            <Route path="dashboard" element={<Private requiredRole="professional" > <Dashboard /> </Private>} />
+            <Route index element={<Private requiredRole="professional" > <Dashboard /> </Private>} />
             <Route path="task" element={<Private> <ProfilePopup /> </Private>} />
             <Route path="clender" element={<Private> <Clender /> </Private>} />
             <Route path="messages" element={<Private> <Chatuser/></Private>} />

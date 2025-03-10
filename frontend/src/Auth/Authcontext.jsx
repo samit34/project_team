@@ -18,8 +18,10 @@ const Authcontext = ({children}) => {
  
   const login = (token) => {
     try {
-      const decodedToken = jwtDecode(token);
       localStorage.setItem("token", token);
+      console.log("tis is a login token ",token)
+      const decodedToken = jwtDecode(token);
+      
       setAuth(true);
       setRole(decodedToken.role);
          
@@ -29,7 +31,7 @@ const Authcontext = ({children}) => {
       } else if (decodedToken.role === "professional") {
         navigate('/provider');
       }else{
-        navigate('/home');
+        navigate('/dzsczsc');
       }
     } catch (error) {
       console.error("Invalid token", error);
