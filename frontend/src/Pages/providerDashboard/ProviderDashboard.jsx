@@ -28,7 +28,7 @@ const ProviderDashboard = () => {
           <Link to="/provider" className="flex items-center p-4 hover:bg-gray-200">
             <Home className="w-5 h-5 mr-3" /> Home
           </Link>
-          <Link to="/providerDash" className="flex items-center p-4 hover:bg-gray-200">
+          <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
             <NotebookPen className="w-5 h-5 mr-3" /> My Jobs
           </Link>
           <Link to="/providerDash/dashboard" className="flex items-center p-4 hover:bg-gray-200">
