@@ -39,8 +39,8 @@ import BookingPage from '../Pages/Home/bookingPage/BookingPage';
         {!hideNavbar && <Navbar />}
         <Routes>
          
-          <Route path='/loging' element={<Login />} />
-          <Route path='/signupg' element={<Signup />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
           <Route path="/" element={<Home />} />
 
           <Route path="/homeInone/:CategoryName" element={<HomeInOne />}>
