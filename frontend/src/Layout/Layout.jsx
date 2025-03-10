@@ -53,7 +53,10 @@ import BookingPage from '../Pages/Home/bookingPage/BookingPage';
         
           {/* Provider Dashboard Routes */}
           <Route path='/provider' element={<ProviderHome />} />
+          
           <Route path="/providerDash" element={<Private requiredRole="professional" > <ProviderDashboard /> </Private>}>
+          <Route index element={<Private requiredRole="professional" > <Dashboard /> </Private>} />
+          <Route path='dashboard' element={<Private requiredRole="professional" > <Dashboard /> </Private>} />
             {/* <Route index element={<Private requiredRole="professional" > <ProviderHome /> </Private>} /> */}
             <Route path="jobs" element={<Private requiredRole="professional" > <Showjobs /> </Private>} />
             <Route path="myprofile" element={<Private requiredRole="professional" > <MyProfile />  </Private>} />
