@@ -14,12 +14,13 @@ import Centercrouser from './home_components/Center_crouser/Centercrouser';
 import Centertwo from './home_components/Center-crouser-two/Center-two';
 import Centerthree from './home_components/Center-crouser-three/Center-three';
 import AllServiceList from './home_components/allServiceList/AllServiceList';
+import Basicservicetwo from './home_components/basicServices/Basicservicetwo';
 const Home = () => {
   return (
     <>
       <Banner />
       <Category_banner />
-      <BasicServices />
+    <Basicservicetwo/>
       <Centercrouser />
       <AddServices />
       <Centertwo />

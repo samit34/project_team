@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from '../Components/Navbar/Navbar';
 import Home from '../Pages/Home/Home';
@@ -26,6 +26,26 @@ import BookingPage from '../Pages/Home/bookingPage/BookingPage';
   const Layout = () => {
 
     const location = useLocation();
+    const [showNavbar, setShowNavbar] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > lastScrollY) {
+          // Scrolling down, hide navbar
+          setShowNavbar(false);
+        } else {
+          // Scrolling up, show navbar
+          setShowNavbar(true);
+        }
+        setLastScrollY(window.scrollY);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScrollY]);
+
+
     useEffect(() => {
       document.documentElement.style.scrollBehavior = 'auto';
       window.scrollTo({ top: 0 });
@@ -36,7 +56,20 @@ import BookingPage from '../Pages/Home/bookingPage/BookingPage';
 
     return (
       <>
-        {!hideNavbar && <Navbar />}
+        {!hideNavbar && <div
+          style={{
+            position: 'sticky',
+            top: showNavbar ? '0' : '-145px', // Moves navbar up when scrolling down
+            left: 0,
+            width: '100%',
+            zIndex: 1000,
+            backgroundColor: 'white',
+            boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+            transition: 'top 0.3s ease-in-out', // Smooth transition effect
+          }}
+        >
+          <Navbar />
+        </div>}
         <Routes>
          
           <Route path='/login' element={<Login />} />

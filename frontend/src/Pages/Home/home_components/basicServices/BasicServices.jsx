@@ -4,7 +4,7 @@ import Heading from '../../../../Components/heading/Heading';
 const BasicServices = () => {
     return (
         <>
-            <section className="bs-section">
+            {/* <section className="bs-section">
                 <Heading props='Basic Services'/>
                 <div className="bs-container ">
                     <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -116,7 +116,8 @@ const BasicServices = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
+            
         </>
 
     )
