@@ -3,62 +3,59 @@
 }
 
 .category-box-one{
-    background-image: url("./assets/plumber.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
+    background-image: url("./assets/imageBanner/automotion.jpg");
+    
+    height: 10rem;
 }
 
 
 .category-box-two{
-    background-image: url("./assets/homeservice.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
+    background-image: url("./assets/imageBanner/business.jpg");
+    
+    height: 10rem;
 }
 
 .category-box-three{
-    background-image: url("./assets/carservice.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
+    background-image: url("./assets/imageBanner/childcare.jpg");
+    
+    height: 10rem;
 }
 
 .category-box-four{
-    background-image: url("./assets/skincare.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
+    background-image: url("./assets/imageBanner/realestate.jpg");
+    
+    height: 10rem;
 }
 
 .category-box-five{
-    background-image: url("./assets/petservice.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
+    background-image: url("./assets/imageBanner/transport.jpg");
+    
+    height: 10rem;
 }
 
 
 
 .category-box-six{
-    background-image: url("./assets/healtservices.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
+    background-image: url("../assets/imageBanner/legalfinace.jpg");
+    
+   
+    height: 10rem;
 }
-
+/* 
 .category-box-one,
 .category-box-two,
 .category-box-three,
 .category-box-four ,.category-box-five,.category-box-six {
-    /* filter: grayscale(100%); */
+    filter: grayscale(100%);
     transition: filter 0.3s ease;
     text-align: center;
     align-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: black;
+    color: white;
     transition: all 0.3s ease;
+   
+    
 }
 
 .category-box-one:hover,
@@ -66,8 +63,10 @@
 .category-box-three:hover,
 .category-box-four:hover,.category-box-five:hover,.category-box-six:hover  {
     filter: none;
+    
+    
+    
 }
-
 .category-box-one h3 ,
 .category-box-two h3,
 .category-box-three h3,
@@ -95,4 +94,76 @@
     display: flex;
     justify-content: center;
     gap: 2rem;
+} */
+.category-box-one,
+.category-box-two,
+.category-box-three,
+.category-box-four,
+.category-box-five,
+.category-box-six {
+    position: relative;
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+/* Add a dark overlay using ::before */
+.category-box-one::before,
+.category-box-two::before,
+.category-box-three::before,
+.category-box-four::before,
+.category-box-five::before,
+.category-box-six::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Initially transparent */
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+/* On hover, darken the background */
+.category-box-one:hover::before,
+.category-box-two:hover::before,
+.category-box-three:hover::before,
+.category-box-four:hover::before,
+.category-box-five:hover::before,
+.category-box-six:hover::before {
+    background: rgba(0, 0, 0, 0.5); /* Slight dark effect */
+}
+
+/* Ensure text appears above the overlay */
+.category-box-one h3,
+.category-box-two h3,
+.category-box-three h3,
+.category-box-four h3,
+.category-box-five h3,
+.category-box-six h3 {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 2; /* Keep text above overlay */
+}
+
+/* Show text on hover */
+.category-box-one:hover h3,
+.category-box-two:hover h3,
+.category-box-three:hover h3,
+.category-box-four:hover h3,
+.category-box-five:hover h3,
+.category-box-six:hover h3 {
+    opacity: 1;
 }
