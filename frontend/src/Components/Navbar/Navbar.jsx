@@ -3,6 +3,12 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useLocation } from 'react-router-dom';
 import { CiSearch } from "react-icons/ci";
 import './navbar.css'
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
+
+
 const Navbar = () => {
 
   const location = useLocation();
@@ -39,13 +45,37 @@ const Navbar = () => {
   }
 
   return (
+
+ <div className='p'  style={{ 
+  // position: 'sticky', 
+  // top: 0, 
+  // left: 0, 
+  // width: '100%', 
+  // zIndex: 1000, 
+  // backgroundColor: 'white',
+  // boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+}}>
+
+<div className='nav-contact w-full bg-black flex md:justify-between justify-center gap-y-3 md:flex-row flex-col  p-1 px-15'>
+  <div className="nav-number text-white items-end justify-center">
+    <p className='text-center'>91+ 8725978774</p>
+  </div>
+  <div className="nav-icons flex gap-5 items-end justify-center">
+ <FaInstagram className='nav-icon text-white ' />
+ <FaFacebookF className='nav-icon text-white ' />
+ <FaXTwitter  className='nav-icon text-white ' />
+ <FaYoutube   className='nav-icon text-white ' />
+</div>
+
+</div>
+
     <Disclosure as="nav" className="bg-white">
       <div className="mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button */}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
-              <span className="absolute -inset-0.5" />
+              <span className="absolute -inset-0.5"/>
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
               <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
@@ -74,8 +104,8 @@ const Navbar = () => {
                   </a>
                 ))}
                 <div className="serach-input-div relative ">
-                <input type="text" placeholder='serach' className='serach'  />
-                <CiSearch className='absolute top-2 right-2 '   />
+                <input type="text" placeholder='serach...' className='serach'  />
+                <CiSearch className='absolute m-0 top-0  right-0  bg-black  h-full  text-white w-8 px-1'   />
                 </div>
               </div>
             </div>
@@ -101,6 +131,8 @@ const Navbar = () => {
         </div>
       </DisclosurePanel>
     </Disclosure>
+    </div>
+
   );
 };
 
