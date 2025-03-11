@@ -63,7 +63,7 @@ const Providerhero = () => {
       </SwiperSlide>
       <SwiperSlide>
         <img
-          src='./assets/Banner-img-3.jpg'
+          src='./assets/Banner-img-2.jpg'
           alt="Banner 4"
           className="w-full h-auto object-cover"
         />
