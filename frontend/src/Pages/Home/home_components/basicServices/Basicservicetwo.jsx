@@ -47,7 +47,7 @@ const Basicservicetwo = () => {
             {/* service-one car-service */}
             <div className="service-one">
               <div className="border-2 flex justify-center px-4 py-6 rounded-2xl">
-                <FaCar className="text-red-800 text-4xl " />
+                <FaCar className="text-yellow-800 text-4xl " />
               </div>
               <h5>Restaurants</h5>
             </div>
