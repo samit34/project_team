@@ -49,22 +49,23 @@ const Category_banner = () => {
           <div className="slider-container m-8 gap-4 ">
             <Slider {...settings} className="category-slider flex gap-4">
               <div className='category-box-one'>
-                <h3>Slide 1</h3>
+             
+                <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">Automotive Service</h3>
               </div>
               <div className='category-box-two'>
-                <h3>Slide 2</h3>
+                <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">business Services</h3>
               </div>
               <div className='category-box-three'>
-                <h3>Slide 3</h3>
+                <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">Childcare and family services</h3>
               </div>
               <div className='category-box-four'>
-                <h3>Slide 4</h3>
+                <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">Real estate and property management</h3>
               </div>
               <div className='category-box-five'>
-                <h3>Slide 5</h3>
+                <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">transport and logistics</h3>
               </div>
               <div className='category-box-six'>
-                <h3>Slide 6</h3>
+                <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">legal and financial services </h3>
               </div>
             </Slider>
           </div>
