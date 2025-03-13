@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
+// Import Swiper stylesq
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
