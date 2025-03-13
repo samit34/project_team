@@ -56,6 +56,7 @@ export default function Banner() {
                             </span></p>
                         <p className="text-sm md:text-xl 2xl:text-3xl text-amber-50 text-wrap">Highly skilled and professionals service provider are always at your service.</p>
                         <button class="text-xs md:text-lg 2xl:text-2xl  py-1 text-white"> Explore more →</button>
+                        {/*  underline underline-offset-4 decoration-[#FFB200] decoration-2 leading-relaxed */}
                     </div>
                 </SwiperSlide>
                 <SwiperSlide className='bg-[url(/assets/imageBanner/beauty1.jpg)] bg-cover w-full h-auto  bg-center relative '> <div className="absolute inset-0 bg-gray-950/50 opacity-50"></div>

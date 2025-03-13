@@ -1,16 +1,12 @@
 .swiper {
     width: 100%;
-    height: 35rem;
+    height: 32rem;
     
   }
   
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-   
-
-  
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,3 +87,6 @@
     height: 10rem;
    
   }}
+
+
+  

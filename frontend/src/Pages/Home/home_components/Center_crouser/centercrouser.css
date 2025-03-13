@@ -1,101 +1,50 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-/* .category-box-one{
-    background-image: url("./assets/plumber.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
-} */
-
-
-/* .category-box-two{
-    background-image: url("./assets/homeservice.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
-}
-
-.category-box-three{
-    background-image: url("./assets/carservice.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
-}
-
-.category-box-four{
-    background-image: url("./assets/skincare.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
-}
-
-.category-box-five{
-    background-image: url("./assets/petservice.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
-}
-
-
-
-.category-box-six{
-    background-image: url("./assets/healtservices.jpeg");
-    background-position: center;
-    background-size: cover;
-    height: 13rem;
-} */
-
-.category-box-one,
-.category-box-two,
-.category-box-three,
-.category-box-four ,.category-box-five,.category-box-six {
-    /* filter: grayscale(100%); */
-    transition: filter 0.3s ease;
+.for-img {
+    position: relative;
     text-align: center;
     align-content: center;
-    font-size: 2rem;
-    font-weight: 600;
-    color: black;
-    transition: all 0.3s ease;
-}
+    align-items: end;
 
-.category-box-one:hover,
-.category-box-two:hover,
-.category-box-three:hover,
-.category-box-four:hover,.category-box-five:hover,.category-box-six:hover  {
-    filter: none;
-}
-
-.category-box-one h3 ,
-.category-box-two h3,
-.category-box-three h3,
-.category-box-four h3 ,.category-box-five h3,.category-box-six  h3{
-    display: none;
-    transition: all 0.5s ease;
-}
-
-
-.category-box-one:hover h3,
-.category-box-two:hover h3,
-.category-box-three:hover h3,
-.category-box-four:hover h3,
-.category-box-five:hover h3,
-.category-box-six:hover h3 {
-    display: block !important;
-}
-
-.slick-list button{
-   display: none;
-}
-.slick-list{
-    height: 21rem !important;
- }
-
-
-.slick-track{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.for-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    /* Initially transparent */
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+.for-img:hover::before {
+    background: rgba(0, 0, 0, 0.3);
+    /* Slight dark effect */
+}
+
+.for-img h5 {
+    position: absolute;
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    /* Ensure text appears above overlay */
+
+}
+
+.for-img:hover h5 {
+    opacity: 1;
+
 }
