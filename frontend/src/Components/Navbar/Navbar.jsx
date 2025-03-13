@@ -46,15 +46,7 @@ const Navbar = () => {
 
   return (
 
- <div className='p'  style={{ 
-  // position: 'sticky', 
-  // top: 0, 
-  // left: 0, 
-  // width: '100%', 
-  // zIndex: 1000, 
-  // backgroundColor: 'white',
-  // boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-}}>
+ <div className='p'>
 
 <div className='nav-contact w-full bg-black flex md:justify-between justify-center gap-y-3 md:flex-row flex-col  p-1 px-15'>
   <div className="nav-number text-white items-end justify-center">
@@ -103,9 +95,9 @@ const Navbar = () => {
                     {item.name}
                   </a>
                 ))}
-                <div className="serach-input-div relative ">
-                <input type="text" placeholder='serach...' className='serach'  />
-                <CiSearch className='absolute m-0 top-0  right-0  bg-black  h-full  text-white w-8 px-1'   />
+                <div className="serach-input-div relative  ">
+                <input type="text" placeholder='serach...' className='serach  hidden lg:block'  />
+                <CiSearch className='absolute m-0 lg:top-0   right-0  bg-black  h-8.5 text-white w-8 px-1'   />
                 </div>
               </div>
             </div>
