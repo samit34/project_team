@@ -40,7 +40,7 @@ const AddServices = () => {
                                     </div>
                                 </div>
                                 <div className="w-1/2 pl-2">
-                                    <p className='text-[12px] flex items-center'><span className=' pr-1 text-[#fd7ed9] font-semibold'>FROM </span> <MdCurrencyRupee className='w-3 h-3 text-black'/>{ser.price}</p>
+                                    <p className='text-[12px] flex items-center'><span className=' pr-1 text-[#fcb1e7] font-semibold'>FROM </span> <MdCurrencyRupee className='w-3 h-3 text-black'/>{ser.price}</p>
                                 </div>
                             </div>
 
