@@ -46,25 +46,25 @@ const Category_banner = () => {
         <>
          
           {/* Other components like a Banner can be rendered here */}
-          <div className="slider-container m-8 gap-4 ">
+          <div className="slider-container mt-8 mx-4 gap-4 ">
             <Slider {...settings} className="category-slider flex gap-4">
-              <div className='category-box-one'>
+              <div className='category-box-one h-[7rem] sm:h-[10rem] 2xl:h-[15rem] bg-center object-cover'>
              
                 <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">Automotive Service</h3>
               </div>
-              <div className='category-box-two'>
+              <div className='category-box-two h-[7rem] sm:h-[10rem] 2xl:h-[15rem] bg-center object-cover'>
                 <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">business Services</h3>
               </div>
-              <div className='category-box-three'>
+              <div className='category-box-three h-[7rem] sm:h-[10rem] 2xl:h-[15rem] bg-center object-cover'>
                 <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">Childcare and family services</h3>
               </div>
-              <div className='category-box-four'>
+              <div className='category-box-four h-[7rem] sm:h-[10rem] 2xl:h-[15rem] bg-center object-cover'>
                 <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">Real estate and property management</h3>
               </div>
-              <div className='category-box-five'>
+              <div className='category-box-five h-[7rem] sm:h-[10rem] 2xl:h-[15rem] bg-center object-cover'>
                 <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">transport and logistics</h3>
               </div>
-              <div className='category-box-six'>
+              <div className='category-box-six h-[7rem] sm:h-[10rem] 2xl:h-[15rem] bg-center object-cover'>
                 <h3 className="bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">legal and financial services </h3>
               </div>
             </Slider>
