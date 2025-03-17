@@ -26,7 +26,7 @@ const UserDetail = ({ user }) => {
         <div className="bg-white shadow-md rounded-lg p-6 md:p-8 w-full">
           <div className="flex justify-between items-start">
             <div>
-              <h2 className="text-lg font-semibold">Personal Information</h2>
+              <h2 className="text-lg font-semibold bg-gradient-to-r from-[#f4ade2] to-[#FFB200] bg-clip-text text-transparent">Personal Information</h2>
             </div>
             <div className="">
                     <Link to="/booking">
@@ -90,7 +90,9 @@ const UserDetail = ({ user }) => {
         </div>
         <div className="bg-white shadow-md rounded-lg p-6 md:p-8 w-full">
           <div className="">
-            <h2 className="text-lg font-semibold">Services at your door step </h2>
+            <div className="flex justify-start">
+            <h2 className="mb-2 text-lg font-semibold bg-gradient-to-r from-[#f4ade2] to-[#FFB200] bg-clip-text text-transparent">Services at your door step </h2>
+            </div>
             <p className="text-sm text-gray-500">Just contact us as you want via </p>
           </div>
           <div className='my-4 flex justify-between items-center'>
@@ -106,7 +108,7 @@ const UserDetail = ({ user }) => {
 
         <div className="bg-white shadow-md rounded-lg p-6 md:p-8 w-full">
           <div className="flex justify-between items-start">
-            <h2 className="text-lg font-semibold">Reviwes</h2>
+            <h2 className="text-lg mb-2 font-semibold bg-gradient-to-r from-[#f4ade2] to-[#FFB200] bg-clip-text text-transparent">Reviwes</h2>
 
           </div>
           <div className='mb-2'>

@@ -31,24 +31,28 @@ const FirstInner = () => {
                 </div>
               </div>
 
-              <div className="w-full flex flex-col">
+              <div className="w-full flex flex-col justify-start">
                 <div className="heading-h1 w-full">
-                  <h2 className='text-md md:text-xl font-bold pb-1 break-all'>{user.name}</h2>
-                  <h5 className='text-sm md:text-md font-semibold pb-3 break-all'>{user.Designation}</h5>
+                  <div className='flex justify-start'> 
+                  <h2 className='text-md md:text-xl font-bold pb-1 break-all text-gray-500 '>{user.name}</h2>
+                  </div>
+                  <h5 className='text-sm md:text-md font-semibold pb-1 break-all text-gray-400'>{user.Designation}</h5>
                   <div className="">
                         {/* Pencil Button */}
-                        <button onClick={() => {setSelectedUser(user); setOpen(true);}} className=" text-sm  py-1 text-black">
+                        <button onClick={() => {setSelectedUser(user); setOpen(true);}} className=" text-sm font-semibold  py-1 bg-gradient-to-r from-[#f4ade2] to-[#FFB200] bg-clip-text text-transparent">
 
                         View Details → 
                         </button>
                         {/* <UserViewDetails open={open} setOpen={setOpen} /> */}
                     </div>
+                  
+
                    
                 </div>
               </div>
             </div>
           ))}
-        </div>
+        </div>  
       </div>
       {selectedUser && <UserViewDetails open={open} setOpen={setOpen} user={selectedUser} />}
 

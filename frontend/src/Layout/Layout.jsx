@@ -24,6 +24,7 @@ import UserViewDetails from '../Pages/Home/home_innerPages/innerpage/innercom/Us
 import BookingPage from '../Pages/Home/bookingPage/BookingPage';
 import Consumer_clender from '../Pages/consumerDashboard/consumer-clender/Consumer_clender';
 
+
   const Layout = () => {
 
     const location = useLocation();
@@ -79,6 +80,7 @@ import Consumer_clender from '../Pages/consumerDashboard/consumer-clender/Consum
 
           <Route path="/homeInone/:CategoryName" element={<HomeInOne />}>
             <Route path=':subcategory' element={<InnerPageOne />} />
+            
           </Route>
           <Route path='/booking' element={<BookingPage/>}/>
           <Route path='/userviewdet' element={<UserViewDetails/>}/>

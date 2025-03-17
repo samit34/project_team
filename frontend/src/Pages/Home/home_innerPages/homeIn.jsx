@@ -2,13 +2,22 @@ import { Ellipsis, X, Home, BookHeart, Car, Factory, Hospital, GraduationCap, Ba
 import profileimg1 from '/assets/profileimg1.jpg'
 import profileimg2 from '/assets/profileimg2.jpg'
 import img from '/assets/Banner-img-1.jpg'
+import img1 from '/assets/imageBanner/home3.jpg';
+import img2 from '/assets/imageBanner/beauty1.jpg';
+import img3 from '/assets/imageBanner/art.jpg';
+import img4 from '/assets/imageBanner/carrepair.jpg'
+import img5 from '/assets/imageBanner/education.jpg'
+import img6 from '/assets/imageBanner/business.jpg'
+import img7 from '/assets/imageBanner/childcare.jpg'
+import img8 from '/assets/imageBanner/health1.jpg'
+import img9 from '/assets/imageBanner/event.jpeg'
 
 const servicesData = [
   {
     category: "Home Services",
     link: "",
-    banner:img,
-    icon: <Home className="w-5 h-5 mr-3" />,
+    banner:img1,
+    icon: <Home className="w-5 h-5 mr-3 hover:bg-gradient-to-r hover:from-[#f4ade2] hover:to-[#FFB200] hover:bg-clip-text hover:text-transparent" />,
 
     subcategories: [
       {
@@ -586,7 +595,7 @@ const servicesData = [
   },
   {
     category: "Personal Services",
-   banner:img,
+   banner:img2,
     link: "",
     icon: <BookHeart className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -936,7 +945,7 @@ const servicesData = [
   },
   {
     category: "Automotive Services",
-   banner:img,
+   banner:img4,
     link: "/homeInone",
     icon: <Car className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -950,7 +959,7 @@ const servicesData = [
   },
   {
     category: "Business Services",
-   banner:img,
+   banner:img6,
     link: "/homeInone",
     icon: <Factory className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -969,7 +978,7 @@ const servicesData = [
   },
   {
     category: "Health and Wellness",
-   banner:img,
+   banner:img8,
     link: "/homeInone",
     icon: <Hospital className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -983,7 +992,7 @@ const servicesData = [
   },
   {
     category: "Educational and tutoring Services",
-   banner:img,
+   banner:img5,
     link: "/homeInone",
     icon: <GraduationCap className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -999,7 +1008,7 @@ const servicesData = [
   },
   {
     category: "Childcare and Family Services",
-   banner:img,
+   banner:img7,
     link: "/homeInone",
     icon: <Baby className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1013,7 +1022,7 @@ const servicesData = [
   },
   {
     category: "Event and Entertainment Services",
-   banner:img,
+   banner:img9,
     link: "/homeInone",
     icon: <Drama className="w-5 h-5 mr-3" />,
     subcategories: [
@@ -1081,7 +1090,7 @@ const servicesData = [
   },
   {
     category: "Creative and artistic services",
-   banner:img,
+   banner:img3,
     link: "/homeInone",
     icon: <Palette className="w-5 h-5 mr-3" />,
     subcategories: [
