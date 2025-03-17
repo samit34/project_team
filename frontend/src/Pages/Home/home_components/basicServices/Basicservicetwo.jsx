@@ -17,12 +17,14 @@ import { GiMountaintop } from "react-icons/gi";
 import { GrYoga } from "react-icons/gr";
 import { MdFamilyRestroom } from "react-icons/md";
 import { MdOutlineFaceRetouchingNatural } from "react-icons/md";
+import Heading from "../../../../Components/heading/Heading";
 const Basicservicetwo = () => {
   return (
     <>
-    
-    <h1 className="text-center text-4xl font-bold  bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">Basic-Services</h1>
-      <div className=" container max-w-6xl mx-auto p-6">
+    <section className="basic-services">
+      <Heading props="Basic Services"/>
+    {/* <h1 className="text-center text-4xl font-bold  bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent capitalize">Basic-Services</h1> */}
+      <div className=" container max-w-6xl mx-auto px-6">
         <div className="basic-service-div">
           <div className="basic-service-inner-div flex flex-wrap gap-10 ">
             {/* service-one    w-20 */}
@@ -179,6 +181,7 @@ const Basicservicetwo = () => {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 };

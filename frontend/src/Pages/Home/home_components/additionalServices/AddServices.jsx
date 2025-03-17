@@ -2,14 +2,16 @@ import React from 'react'
 import Heading from '../../../../Components/heading/Heading'
 import { MdCurrencyRupee } from "react-icons/md";
 import Button from '../../../../Components/button/Button';
-import img1 from "/assets/addser1.png";
-import img2 from "/assets/addser5.png" ;
-import img3 from "/assets/addser3.png";
-import img4 from "/assets/addser1.png";
-import img5 from "/assets/addser6.png";
-import img6 from "/assets/addser7.png";
-import img7 from "/assets/addser8.png";
-import img8 from "/assets/addser1.png";
+import img1 from "/assets/imageBanner/mbs1.jpg";
+// import img1 from "/assets/addser1.png";
+import img2 from "/assets/imageBanner/mbs2.jpg" ;
+import img3 from "/assets/imageBanner/mbs3.jpg";
+import img4 from "/assets/imageBanner/mbs4.jpg";
+import img5 from "/assets/imageBanner/mbs5.jpg";
+import img6 from "/assets/imageBanner/mbs6.jpg";
+import img7 from "/assets/imageBanner/mbs7.jpg";
+import img8 from "/assets/imageBanner/mbs8.jpg";
+
 const data =[
     {name:"Home Services",img:img1 , price:"399",link:"#"},
     {name:"Automotive Services",img:img2, price:"499",link:"#"},
@@ -28,15 +30,15 @@ const AddServices = () => {
             <section className="adds-section">
                 <Heading props='Most Book Services' />
                 <div className="adds-container ">
-                    <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                    <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-4">
                         {data.map((ser,index)=>(
 
                     
-                        <div key={index} className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-6">
+                        <div key={index} className="rounded-lg bg-white p-6 shadow-md flex flex-col  gap-3">
                             <div className="flex flex-row space-x-14 sm:space-x-10">
                                 <div className="w-1/2">
-                                    <div className="w-16 h-16">
-                                    <img src={ser.img} alt="" className='w-16 h-16 img-fluid' />
+                                    <div className="w-24 h-24 ">
+                                    <img src={ser.img} alt="" className='w-24 h-24  img-fluid object-cover bg-center rounded-full' />
                                     </div>
                                 </div>
                                 <div className="w-1/2 pl-2">

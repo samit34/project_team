@@ -5,32 +5,32 @@
 .category-box-one{
     background-image: url("./assets/imageBanner/automotion.jpg");
     
-    height: 10rem;
+    /* height: 10rem; */
 }
 
 
 .category-box-two{
     background-image: url("./assets/imageBanner/business.jpg");
     
-    height: 10rem;
+    /* height: 10rem; */
 }
 
 .category-box-three{
     background-image: url("./assets/imageBanner/childcare.jpg");
     
-    height: 10rem;
+    /* height: 10rem; */
 }
 
 .category-box-four{
     background-image: url("./assets/imageBanner/realestate.jpg");
     
-    height: 10rem;
+    /* height: 10rem; */
 }
 
 .category-box-five{
     background-image: url("./assets/imageBanner/transport.jpg");
     
-    height: 10rem;
+    /* height: 10rem; */
 }
 
 
@@ -39,7 +39,7 @@
     background-image: url("../assets/imageBanner/legalfinace.jpg");
     
    
-    height: 10rem;
+    /* height: 10rem; */
 }
 /* 
 .category-box-one,
@@ -102,7 +102,7 @@
 .category-box-five,
 .category-box-six {
     position: relative;
-    height: 10rem;
+    /* height: 10rem; */
     background-size: cover;
     background-position: center;
     color: white;

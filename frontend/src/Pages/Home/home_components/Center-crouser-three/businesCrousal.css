@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.for-bus {
+    position: relative;
+    text-align: center;
+    align-content: center;
+    align-items: end;
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.for-bus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    /* Initially transparent */
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+.for-bus:hover::before {
+    background: rgba(0, 0, 0, 0.3);
+    /* Slight dark effect */
+}
+
+.for-bus .h3{
+    position: absolute;
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+
+    /* font-size: 1.2rem;
+    font-weight: bold; */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    /* Ensure text appears above overlay */
+
+}
+
+.for-bus:hover .h3 {
+    opacity: 1;
+
+}
