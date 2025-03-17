@@ -22,6 +22,7 @@ import InnerPageOne from '../Pages/Home/home_innerPages/innerpage/InnerPageOne';
 import Chatuser from '../Pages/chatuser/Chatuser';
 import UserViewDetails from '../Pages/Home/home_innerPages/innerpage/innercom/UserViewDetails';
 import BookingPage from '../Pages/Home/bookingPage/BookingPage';
+import Consumer_clender from '../Pages/consumerDashboard/consumer-clender/Consumer_clender';
 
   const Layout = () => {
 
@@ -105,6 +106,7 @@ import BookingPage from '../Pages/Home/bookingPage/BookingPage';
           <Route path="/ConsumerDash" element={<ConsumerDashbord />}>
             <Route index element={<Jobpost />} />
             <Route path="stackpage" element={<Stacks />}/>
+            <Route path="clender" element={<Consumer_clender/>}/>
           </Route>
         </Routes>
       </>

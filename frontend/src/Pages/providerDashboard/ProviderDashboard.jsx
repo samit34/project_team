@@ -23,8 +23,7 @@ const ProviderDashboard = () => {
           />
         </div>
 
-
-        <nav className="mt-4 flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 sc scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
+        <nav className="mt-4  flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 sc scrollbar-thumb-rounded-full scrollbar-track-rounded-full">
           <Link to="/provider" className="flex items-center p-4 hover:bg-gray-200">
             <Home className="w-5 h-5 mr-3" /> Home
           </Link>
