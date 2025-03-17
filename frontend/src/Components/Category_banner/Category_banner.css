@@ -102,7 +102,7 @@
 .category-box-five,
 .category-box-six {
     position: relative;
-    /* height: 10rem; */
+    height: 10rem;
     background-size: cover;
     background-position: center;
     color: white;

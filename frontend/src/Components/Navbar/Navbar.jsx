@@ -97,7 +97,7 @@ const Navbar = () => {
                 ))}
                 <div className="serach-input-div relative  ">
                 <input type="text" placeholder='serach...' className='serach  hidden lg:block'  />
-                <CiSearch className='absolute m-0 lg:top-0   right-0  bg-black  h-8.5 text-white w-8 px-1'   />
+                <CiSearch className='serach-icon absolute m-0  top-[-1rem]  right-[-23px] lg:top-0 lg:right-0  lg:bg-black  bg-transparent color-black h-8.5 lg:text-white text-black w-8 px-1'   />
                 </div>
               </div>
             </div>

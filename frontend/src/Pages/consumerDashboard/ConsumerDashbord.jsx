@@ -17,7 +17,7 @@ const ConsumerDashbord = () => {
           } transition-transform duration-300 lg:relative lg:translate-x-0 lg:flex lg:flex-col`}
       >
         <div className="flex items-center justify-between p-4 border-b">
-          <h2 className="text-xl font-semibold">Provider Dashboard</h2>
+          <h2 className="text-xl font-semibold">Consumer Dashboard</h2>
           <X
             className="w-6 h-6 cursor-pointer lg:hidden"
             onClick={() => setIsOpen(false)}
@@ -72,7 +72,7 @@ const ConsumerDashbord = () => {
         {/* Navbar */}
         <header className="flex items-center justify-between p-4 bg-white shadow-md">
           <Menu className="w-6 h-6 cursor-pointer lg:hidden" onClick={() => setIsOpen(true)} />
-          <h1 className="text-2xl font-bold">Provider Dashboard</h1>
+          <h1 className="text-2xl font-bold">consumer Dashboard</h1>
         </header>
 
         {/* Content Area */}

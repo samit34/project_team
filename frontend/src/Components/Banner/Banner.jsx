@@ -148,16 +148,6 @@ export default function Banner() {
 
 
 
-{/* <SwiperSlide className="relative bg-[url('/assets/imageBanner/home2.jpg')] bg-cover bg-center">
-                  
-                  <div className="absolute inset-0 bg-black opacity-50"></div>
 
-               
-                  <h1 className="absolute inset-0 flex items-center justify-center text-2xl  font-bold text-white">
-                      <span className="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
-                          pppp
-                      </span>
-                  </h1>
-              </SwiperSlide> */}
 
           
