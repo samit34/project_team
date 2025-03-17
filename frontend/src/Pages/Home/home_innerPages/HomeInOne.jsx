@@ -19,7 +19,7 @@ const HomeInOne = () => {
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
       <aside
-        className={`fixed inset-y-0 mt-16 lg:mt-2 left-0 z-30 w-64 bg-slate-100 shadow-md transform ${isOpen ? 'translate-x-0' : '-translate-x-full'
+        className={`fixed inset-y-0 mt-14 lg:mt-2 left-0 z-30 w-64 bg-slate-100 shadow-md transform ${isOpen ? 'translate-x-0' : '-translate-x-full'
           } transition-transform duration-300 lg:relative lg:translate-x-0 lg:flex lg:flex-col`}
       >
         <div className="flex items-center justify-between p-4 border-b">
@@ -56,7 +56,7 @@ const HomeInOne = () => {
 
       {/* Main Content */} 
       <div className="flex-1 flex flex-col">
-        <header className="flex items-center justify-end p-4 bg-blue-300 shadow-md mb-3">
+        <header className="flex items-center justify-end px-4 py-2 bg-white shadow-md mb-3">
           <h2 className="text-md font-semibold p-2"><CiFilter /></h2>
           <h2 className="text-md font-semibold p-2"><CiGrid41 /></h2>
           <h2 className="text-md font-semibold p-2"><GrSort /></h2>
@@ -66,6 +66,7 @@ const HomeInOne = () => {
 
         <main className="p-6 flex-1 overflow-auto">
           <Outlet />
+      
         </main>
       </div>
     </div>
