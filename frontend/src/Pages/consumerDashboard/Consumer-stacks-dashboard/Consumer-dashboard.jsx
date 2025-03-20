@@ -1,5 +1,5 @@
 import React from 'react'
-import Spending from './Dashboard-com/Spending/Spending'
+// import Spending from './Dashboard-com/Spending/Spending'
 import Booking from './Dashboard-com/booking/Booking'
 import Pending from './Dashboard-com/Pending/Pending'
 import History from './Dashboard-com/history/History'
@@ -9,7 +9,7 @@ const Consumerdashboard = () => {
       <>
       <div className='flex flex-col gap-3'>
       <div className='flex gap-2' >
-          <Spending/>  
+       
           <Booking/>
           <Pending/>
       
@@ -19,6 +19,7 @@ const Consumerdashboard = () => {
           </div>
           <div>
             <ProviderList/>
+
           </div>
           </div>
       </>
