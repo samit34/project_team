@@ -23,9 +23,9 @@ import Chatuser from '../Pages/chatuser/Chatuser';
 import UserViewDetails from '../Pages/Home/home_innerPages/innerpage/innercom/UserViewDetails';
 import BookingPage from '../Pages/Home/bookingPage/BookingPage';
 import Consumer_clender from '../Pages/consumerDashboard/consumer-clender/Consumer_clender';
-import Consumerdashboard from '../Pages/consumerDashboard/Consumer-stacks-dashboard/Consumer-dashboard';
-import Spending from '../Pages/consumerDashboard/Consumer-stacks-dashboard/Dashboard-com/Spending/Spending';
-import Booking from '../Pages/consumerDashboard/Consumer-stacks-dashboard/Dashboard-com/booking/Booking';
+
+
+
   const Layout = () => {
 
     const location = useLocation();
@@ -81,6 +81,7 @@ import Booking from '../Pages/consumerDashboard/Consumer-stacks-dashboard/Dashbo
 
           <Route path="/homeInone/:CategoryName" element={<HomeInOne />}>
             <Route path=':subcategory' element={<InnerPageOne />} />
+            
           </Route>
           <Route path='/booking' element={<BookingPage/>}/>
           <Route path='/userviewdet' element={<UserViewDetails/>}/>
