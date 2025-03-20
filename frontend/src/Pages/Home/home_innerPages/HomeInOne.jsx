@@ -57,9 +57,9 @@ const HomeInOne = () => {
       {/* Main Content */} 
       <div className="flex-1 flex flex-col">
         <header className="flex items-center justify-end p-4 bg-blue-300 shadow-md mb-3">
-          <h2 className="text-md font-semibold p-2"><CiFilter /></h2>
-          <h2 className="text-md font-semibold p-2"><CiGrid41 /></h2>
-          <h2 className="text-md font-semibold p-2"><GrSort /></h2>
+          <h2 className="text-md font-semibold p-2"><CiFilter/></h2>
+          <h2 className="text-md font-semibold p-2"><CiGrid41/></h2>
+          <h2 className="text-md font-semibold p-2"><GrSort  /></h2>
           <Ellipsis className="w-8 h-8 cursor-pointer lg:hidden p-2" onClick={() => setIsOpen(true)} />
 
         </header>

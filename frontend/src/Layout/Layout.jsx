@@ -23,7 +23,9 @@ import Chatuser from '../Pages/chatuser/Chatuser';
 import UserViewDetails from '../Pages/Home/home_innerPages/innerpage/innercom/UserViewDetails';
 import BookingPage from '../Pages/Home/bookingPage/BookingPage';
 import Consumer_clender from '../Pages/consumerDashboard/consumer-clender/Consumer_clender';
-
+import Consumerdashboard from '../Pages/consumerDashboard/Consumer-stacks-dashboard/Consumer-dashboard';
+import Spending from '../Pages/consumerDashboard/Consumer-stacks-dashboard/Dashboard-com/Spending/Spending';
+import Booking from '../Pages/consumerDashboard/Consumer-stacks-dashboard/Dashboard-com/booking/Booking';
   const Layout = () => {
 
     const location = useLocation();
@@ -107,6 +109,10 @@ import Consumer_clender from '../Pages/consumerDashboard/consumer-clender/Consum
             <Route index element={<Jobpost />} />
             <Route path="stackpage" element={<Stacks />}/>
             <Route path="clender" element={<Consumer_clender/>}/>
+
+            <Route path="spendig" element={<Spending/>}/>
+            <Route path="dashboard" element={<Consumerdashboard/>}/>
+            <Route path="Booking" element={<Booking/>}/>
           </Route>
         </Routes>
       </>
