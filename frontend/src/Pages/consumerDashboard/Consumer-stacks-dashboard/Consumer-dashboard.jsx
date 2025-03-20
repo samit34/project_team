@@ -1,5 +1,5 @@
 import React from 'react'
-// import Spending from './Dashboard-com/Spending/Spending'
+
 import Booking from './Dashboard-com/booking/Booking'
 import Pending from './Dashboard-com/Pending/Pending'
 import History from './Dashboard-com/history/History'
