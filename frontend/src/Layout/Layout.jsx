@@ -111,9 +111,9 @@ import Consumer_clender from '../Pages/consumerDashboard/consumer-clender/Consum
             <Route path="stackpage" element={<Stacks />}/>
             <Route path="clender" element={<Consumer_clender/>}/>
 
-            <Route path="spendig" element={<Spending/>}/>
-            <Route path="dashboard" element={<Consumerdashboard/>}/>
-            <Route path="Booking" element={<Booking/>}/>
+            {/* <Route path="spendig" element={<Spending/>}/> */}
+            <Route path="dashboard" element={<ConsumerDashbord/>}/>
+            <Route path="Booking" element={<BookingPage/>}/>
           </Route>
         </Routes>
       </>
