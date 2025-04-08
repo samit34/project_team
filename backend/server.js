@@ -15,7 +15,7 @@ connectDB();
 const http = require('http');
 const server = http.createServer(app);
 
-app.use('/user', userRoute);
+app.use('/user', userRoute)      ;
 
 // Setup Socket.IO
 const { Server } = require('socket.io');
