@@ -17,7 +17,7 @@ const ConsumerDashbord = () => {
           } transition-transform duration-300 lg:relative lg:translate-x-0 lg:flex lg:flex-col`}
       >
         <div className="flex items-center justify-between p-4 border-b">
-          <h2 className="text-xl font-semibold">Consumer Dashboard</h2>
+          <h2 className="text-xl font-semibold">umer Dashboard</h2>
           <X
             className="w-6 h-6 cursor-pointer lg:hidden"
             onClick={() => setIsOpen(false)}
@@ -34,31 +34,22 @@ const ConsumerDashbord = () => {
           <Link to="/ConsumerDash/dashboard" className="flex items-center p-4 hover:bg-gray-200">
             <LayoutDashboard className="w-5 h-5 mr-3" /> Dashboard
           </Link>
+          <Link to="/ConsumerDash/dashboard" className="flex items-center p-4 hover:bg-gray-200">
+            <LayoutDashboard className="w-5 h-5 mr-3" /> jobpost
+          </Link>
 
           <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
             <UserPen className="w-5 h-5 mr-3" /> My Profile
           </Link>
+         
           <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
-            <Calendar className="w-5 h-5 mr-3" /> Calender
-
+            <Wallet className="w-5 h-5 mr-3" /> jobpost
           </Link>
-          <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
-            <Wallet className="w-5 h-5 mr-3" /> Earnings
-          </Link>
-          <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
-            <LayoutList className="w-5 h-5 mr-3" /> Pending Task
-
-          </Link>
-          <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
-            <FolderKanban className="w-5 h-5 mr-3" /> Manage Services
-          </Link>
-          <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
-
-            <UserRoundCheck className="w-5 h-5 mr-3" />Job Board
-          </Link>
+         
+     
           <Link to="/providerDAsh/messages" className="flex items-center p-4 hover:bg-gray-200">
 
-            <MessageCircle className="w-5 h-5 mr-3" />Mestrm hgsage
+            <MessageCircle className="w-5 h-5 mr-3" />Inbox
           </Link>
           <Link to="#" className="flex items-center p-4 hover:bg-gray-200">
             <Settings className="w-5 h-5 mr-3" /> Settings

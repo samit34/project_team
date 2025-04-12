@@ -23,6 +23,7 @@ import Chatuser from '../Pages/chatuser/Chatuser';
 import UserViewDetails from '../Pages/Home/home_innerPages/innerpage/innercom/UserViewDetails';
 import BookingPage from '../Pages/Home/bookingPage/BookingPage';
 import Consumer_clender from '../Pages/consumerDashboard/consumer-clender/Consumer_clender';
+import Consumerdashboard from '../Pages/consumerDashboard/Consumer-stacks-dashboard/Consumer-dashboard';
 
 
 
@@ -112,7 +113,7 @@ import Consumer_clender from '../Pages/consumerDashboard/consumer-clender/Consum
             <Route path="clender" element={<Consumer_clender/>}/>
 
             {/* <Route path="spendig" element={<Spending/>}/> */}
-            <Route path="dashboard" element={<ConsumerDashbord/>}/>
+            <Route path="dashboard" element={<Consumerdashboard/>}/>
             <Route path="Booking" element={<BookingPage/>}/>
           </Route>
         </Routes>
