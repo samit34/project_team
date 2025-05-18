@@ -1,7 +1,7 @@
 
 
 
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../../Auth/Authcontext';
@@ -17,7 +17,10 @@ const Signup = () => {
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  const [category, setCategory] = useState('');
+  const [subcategory, setSubcategory] = useState('');
+  const [cat , setCat] = useState([])
+  const [subcat , setSubcat] = useState([])
   const navigate = useNavigate();
   const { login } = useAuth();
 
@@ -46,12 +49,14 @@ const Signup = () => {
     }
         console.log("the  ")
     const data = {
-      username,
-      phone,
-      email,
-      password,
-      role,
-      gender,
+     username,
+     phone,
+     email,
+     password,
+     role,
+     gender,
+     category,
+     subcategory
     };
     console.log("the handle submit fun cation runnig" , data)
     axios
@@ -69,7 +74,42 @@ const Signup = () => {
       });
   };
    
+  const categoryOptions = ()=>{
+    console.log("Fetching categories...");
+      axios.get("http://localhost:8000/user/getcategory")
+      .then((res) => {
+        console.log("Data fetched from database:", res.data);
+        setCat(res.data);
+      }).catch((error) => {
+        console.error("Error fetching data:", error);
+      } );
+  }
 
+  console.log("Selected category:", category); 
+  
+  const subcategoryOptions = () => {
+    const data = { category: category };
+    axios.post("http://localhost:8000/user/getsubcategory", data)
+      .then((res) => {
+        console.log("Data fetched from database:", res.data);
+        setSubcat(res.data); // setSubcat, not setSubcategory
+        // subcategoryOptions();
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+    
+  };
+   console.log("Selected subcat:", subcat);
+useEffect(() => {
+    categoryOptions()
+  },[]);
+  
+  useEffect(() => {
+    if (category) {
+      subcategoryOptions();
+    }
+  }, [category]); 
 
   return (
     <div className=" sec-signup ">
@@ -177,6 +217,43 @@ const Signup = () => {
           /> 
           Professional
         </label>
+
+        <select
+  name="category"
+  value={category}
+  onChange={(e) => setCategory(e.target.value)}
+>
+<option value="">Select a category</option>
+  {cat.map((catItem) => (
+    <option key={catItem._id} value={catItem.category}>
+      {catItem.category}
+    </option>
+  ))}
+</select>
+{ console.log("Selected category:", category) } 
+{ console.log("Selected category:", subcat) } 
+{category && category.length > 0 ? (
+        <select
+          name="subcategory"
+          value={subcategory}
+          onChange={(e) => setSubcategory(e.target.value)}
+        >
+         <option value="">Select a Subcategory</option>
+         
+         {subcat.map(sub =>
+  sub.subcategories.map(a => (
+    <option key={a.name} value={a.name}>
+      {a.name}
+    </option>
+  ))
+)}
+{console.log("Selected subcat:", subcat)}
+ 
+        </select>
+      ) : (
+        <p>No categories available.</p>
+      )}
+
       </div>
     </div>
         <button type="submit" className="singup-submit  ">Signup</button>

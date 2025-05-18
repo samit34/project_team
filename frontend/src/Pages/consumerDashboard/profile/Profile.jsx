@@ -5,16 +5,16 @@ import ProfileCard from './profile_comp/ProfileCard'
 import ProviderStats from './profile_comp/ProviderStats'
 
 
-const MyProfile = () => {
+const Profile = () => {
   return (
   <>
-  <Profile/>
-  {/* <ProviderStats/>
-  <ProfileTwo/> */}
-  <ProfileCard/>
+  {/* <Profile/>
+  <ProviderStats/>
+  <ProfileTwo/>
+  <ProfileCard/> */}
  
   </>
   )
 }
 
-export default MyProfile
+export default Profile

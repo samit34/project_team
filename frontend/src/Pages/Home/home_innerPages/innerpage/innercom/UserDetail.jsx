@@ -20,9 +20,7 @@ const UserDetail = ({ user }) => {
     <>
 
       <div className="p-4 md:p-8 bg-gray-50 min-h-screen flex flex-col gap-6">
-    
-
-        {/* Personal Information Card */}
+     {/* Personal Information Card */}
         <div className="bg-white shadow-md rounded-lg p-6 md:p-8 w-full">
           <div className="flex justify-between items-start">
             <div>
@@ -50,15 +48,15 @@ const UserDetail = ({ user }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             <div>
               <p className="text-sm text-gray-500">First Name</p>
-              <p className="font-medium">{user.name}</p>
+              <p className="font-medium">{user.username}</p>
             </div>
             <div>
               <p className="text-sm text-gray-500">Last Name</p>
-              <p className="font-medium">{user.name}</p>
+              <p className="font-medium">{user.username}</p>
             </div>
             <div className="">
               <p className="text-sm text-gray-500">Bio</p>
-              <p className="font-medium">{user.Designation}</p>
+              <p className="font-medium">{user.Designn}</p>
             </div>
             <div>
               <p className="text-sm text-gray-500">Phone</p>
@@ -96,9 +94,9 @@ const UserDetail = ({ user }) => {
             <p className="text-sm text-gray-500">Just contact us as you want via </p>
           </div>
           <div className='my-4 flex justify-between items-center'>
-              <p className="text-sm text-gray-700 flex items-center gap-2"><IoMdChatbubbles className='w-5 h-5 text-gray-500'/>Chat</p>
-              <p className="text-sm text-gray-700 flex items-center gap-2"><IoCallSharp className='w-5 h-5 text-gray-500' />Phone</p>
-              <p className="text-sm text-gray-700 flex items-center gap-2"> <MdEmail className='w-5 h-5 text-gray-500' />Email</p>
+            <Link to={`/chat/${user._id}`} ><p className="text-sm text-gray-700 flex items-center gap-2"><IoMdChatbubbles className='w-5 h-5 text-gray-500'/>Chat</p> </Link>
+            <Link>  <p className="text-sm text-gray-700 flex items-center gap-2"><IoCallSharp className='w-5 h-5 text-gray-500' />{user.phone}</p> </Link>  
+              <Link><p className="text-sm text-gray-700 flex items-center gap-2"> <MdEmail className='w-5 h-5 text-gray-500' />{user.email}</p> </Link>
               
            
             </div>

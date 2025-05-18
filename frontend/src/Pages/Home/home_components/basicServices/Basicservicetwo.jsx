@@ -18,7 +18,11 @@ import { GrYoga } from "react-icons/gr";
 import { MdFamilyRestroom } from "react-icons/md";
 import { MdOutlineFaceRetouchingNatural } from "react-icons/md";
 import Heading from "../../../../Components/heading/Heading";
+import { useAuth } from "../../../../Auth/Authcontext";
+import { Link } from "react-router-dom";
 const Basicservicetwo = () => {
+     const {data } =  useAuth()
+     console.log("samit " , data)
   return (
     <>
     <section className="basic-services">
@@ -28,19 +32,23 @@ const Basicservicetwo = () => {
         <div className="basic-service-div">
           <div className="basic-service-inner-div flex flex-wrap gap-10 ">
             {/* service-one    w-20 */}
-            <div className="service-one    w-20">
+            <Link  to={`/homeInone/${ data?.[0]?.category}`} >
+            <div className="service-one    w-20">  
               <div className="border-2 flex justify-center px-4 py-6 rounded-2xl">
+              
                 <FaPlateWheat className="text-red-800 text-4xl " />
               </div>
-              <h5   className= "text-center">Restaurants</h5>
+              <h5 className="text-center">{ data?.[0]?.category || "no" }</h5>
+
             </div>
+            </Link>
 
             {/* service-two-book-services */}
             <div className="service-one    w-20">
               <div className="border-2 flex justify-center px-4 py-6 rounded-2xl">
                 < SiBookstack className="text-green-800 text-4xl " />
               </div>
-              <h5   className= "text-center">Education</h5>
+              <h5   className= "text-center">{ data?.[1]?.category || "no" }</h5>
             </div>
 
             {/* service-three plumber-service */}
@@ -48,7 +56,7 @@ const Basicservicetwo = () => {
               <div className="border-2 flex justify-center px-4 py-6 rounded-2xl">
                 <IoIosWater className="text-blue-800 text-4xl " />
               </div>
-              <h5   className= "text-center">Plumbing</h5>
+              <h5   className= "text-center">{ data?.[2       ]?.category || "no" }</h5>
             </div>
 
             {/* service-one    w-20 home service */}

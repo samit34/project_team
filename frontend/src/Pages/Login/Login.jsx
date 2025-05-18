@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState , useEffect } from 'react';
 import { FaEye } from "react-icons/fa";
 import axios from "axios";
 import { useAuth } from '../../Auth/Authcontext';
 import { Link, useNavigate, Navigate } from 'react-router-dom';
-
-
+import {jwtDecode} from 'jwt-decode';
 
 const Login = () => {
   const [show, setShow] = useState(false);
@@ -35,9 +34,18 @@ const Login = () => {
   };
   const toggleShowPassword = () => setShow((prev) => !prev);
   if (isauth) {
-    console.log("login funcationis trigger");
-    return <Navigate to="/" />; // Redirect if already logged in
+    const decodedToken = jwtDecode(localStorage.getItem('token'));
+    const userRole = decodedToken.role;
+  
+    if (userRole === 'professional') {
+      return <Navigate to="/provider" />;
+    } else if (userRole === 'client') {
+      return <Navigate to="/ConsumerDash" />;
+    } else {
+      return <Navigate to="/ " />;
+    }
   }
+  
   return (
     <>
       <div className='main bg-main-image bg-cover bg-center h-screen content-center'>
@@ -69,7 +77,7 @@ const Login = () => {
                    <FaEye className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 cursor-pointer" onClick={toggleShowPassword}
                     />
                 </div>
-                <button className="login-button bg-primary-color w-full my-3 p-2 font-semibold text-white rounded-sm" onClick={loginuser}>
+                <button className="login-button bg-primary-color w-full my-3 p-2 font-semibold text-black rounded-sm" onClick={loginuser}>
                   Login
                 </button>
                 <div className='text-black ' >

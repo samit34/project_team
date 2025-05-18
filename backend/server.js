@@ -8,7 +8,7 @@ const Message = require('./model/messageschema');
 const jwt = require('jsonwebtoken');
 
 app.use(express.json());
-app.use(cors());
+app.use(cors());    
 connectDB();
 
 // Create HTTP server
@@ -27,45 +27,44 @@ const io = new Server(server, {
 });
 
 // Middleware to authenticate socket connections
-io.use((socket, next) => {
+io.use((socket, next)=>{
   let token = socket.handshake.auth?.token; // Handle missing token
-  if (!token) {
+  if(!token){
     return next(new Error("Authentication error: No token provided"));
   }
-
-  jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+  jwt.verify(token,process.env.JWT_SECRET, (err, decoded) =>{
     if (err) return next(new Error("Authentication error: Invalid token"));
     socket.user = decoded;
     next();
-  });
+  }); 
 });
 
 // Store connected users
 const users = {};
 
 io.on('connection', (socket) => {
-  console.log('New client connected');
-
   const senderId = socket.user.username; // Sender's username
-  const userId = socket.handshake.auth.userId; // Receiver's ID
+  console.log('Socket ID:', socket); // Log the socket ID
+  console.log('New client connected',senderId );
+  const userId = socket.user.userid; // Receiver's ID
   console.log("Receiver ID:", userId);
 
   if (senderId) {
     users[senderId] = socket.id; // Map receiver's ID to socket ID
-  }
-
+}
   console.log("Active users:", users);
 
   // Fetch chat history
   Message.find({ 
     $or: [
-      { sender: senderId, receiver: userId }, 
-      { sender: userId, receiver: senderId } // ✅ Fetch both sender and receiver messages
+      { sender: senderId}, {receiver: userId }, 
+      // { sender: userId, receiver: senderId } // ✅ Fetch both sender and receiver messages
     ] 
   })
     .sort({ createdAt: 1 })
     .then(messages => {
       socket.emit('chatHistory', messages);
+      console.log("Chat history sent to client:", messages);
     })
     .catch(err => console.error("Error fetching chat history:", err));
 

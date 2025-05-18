@@ -4,14 +4,19 @@ import { Ellipsis, X } from 'lucide-react';
 import { CiGrid41, CiFilter } from 'react-icons/ci';
 import { GrSort } from 'react-icons/gr';
 import servicesData from './homeIn';
+import { useAuth } from '../../../Auth/Authcontext';
 
 const HomeInOne = () => {
-  const { CategoryName, subcategory } = useParams();
-  const currentCategory = servicesData.find(service => service.category === CategoryName);
+   
+  const { CategoryName} = useParams();
+  console.log( "this is a bla bla",CategoryName);
 
+  const { data } = useAuth();
+  console.log("this is a data",data)
+  const currentCategory = data.find(service => service.category === CategoryName);
 
-  const selectedSubcategory = currentCategory?.subcategories.find(sub => sub.link === subcategory);
-
+ console.log("this is a current category",currentCategory)
+  
 
   const [isOpen, setIsOpen] = useState(false);
 // sidebar given
@@ -41,7 +46,7 @@ const HomeInOne = () => {
               <h2 className=" text-lg font-semibold bg-gradient-to-r from-[#f4ade2] to-[#FFB200] bg-clip-text text-transparent">Other Services</h2>
             </div>
 
-            {servicesData.map((service, index) => (
+            {data.map((service, index) => (
               <Link
                 key={index}
                 to={`/homeInone/${service.category}`}

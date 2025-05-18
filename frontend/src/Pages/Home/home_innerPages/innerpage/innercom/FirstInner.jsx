@@ -4,20 +4,31 @@ import { useParams } from 'react-router-dom'
 import { IoIosStar } from "react-icons/io";
 import { MdOutlineCurrencyRupee } from "react-icons/md";
 import UserViewDetails from './UserViewDetails';
+import { useAuth } from '../../../../../Auth/Authcontext';
 
 const FirstInner = () => {
   const { CategoryName, subcategory } = useParams();
-  const currentCategory = servicesData.find(service => service.category === CategoryName);
+
+  const {profile , data} = useAuth()
+  console.log("this is a all profile",profile);
+  const currentCategory = data.find(service => service.category === CategoryName);
   const selectedSubcategory = currentCategory?.subcategories.find(sub => sub.link === subcategory);
+  console.log("this is a selected subcategory",selectedSubcategory.link)
+
+  const matchingProfiles = profile.filter((p) => p.subcategory === selectedSubcategory.link);
+
+  console.log("this is a matching profile",matchingProfiles);
+  
+  
   const [open, setOpen] = useState(false);
   const [selectedUser, setSelectedUser] = useState(null); // State for clicked user
 
-
+  
   return (
     <>
       <div className="bg-gray-50 rounded-lg shadow-md">
         <div className="max-w-6xl mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {selectedSubcategory?.userprofile.map((user, index) => (
+          {matchingProfiles.map((user, index) => (
             <div key={index} className="rounded-lg bg-white  p-4 md:p-6 shadow-md flex flex-col gap-3">
               <div className="flex flex-row space-x-14 sm:space-x-10">
                 <div className="w-1/2">

@@ -18,12 +18,13 @@ const servicesData = [
     link: "",
     banner:img1,
     icon: <Home className="w-5 h-5 mr-3 hover:bg-gradient-to-r hover:from-[#f4ade2] hover:to-[#FFB200] hover:bg-clip-text hover:text-transparent" />,
-
+   
     subcategories: [
       {
         name: "Plumbing", link: "Plumbing",
         userprofile: [
           {
+            
             id: 1,
             name: 'Advard john',
             link: '',
@@ -360,7 +361,7 @@ const servicesData = [
       },
       {
         name: "Pool Maintenance", link: "PoolMaintenance", userprofile: [
-          {
+        {
             id: 1,
             name: 'Advard john',
             link: '',
@@ -464,10 +465,6 @@ const servicesData = [
             email: "Advard@gmail.com",
             phno: "9876543209"
           },
-
-
-
-
         ],
       },
       {
@@ -590,7 +587,7 @@ const servicesData = [
       { name: "Roofing and gutter cleaning", link: "Roofingandguttercleaning" },
       { name: "Home Painting", link: "HomePainting" },
       { name: "Moving Services", link: "MovingServices" },
-      { name: "Junk Removal and Hauling", link: "JunkRemovalandHauling" },
+      { name: "samit Removal and Hauling", link: "JunkRemovalandHauling" },
     ],
   },
   {
@@ -897,7 +894,7 @@ const servicesData = [
             about: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, hic!",
             Designation: "personal trainer",
             imageSrc: profileimg1,
-            imageAlt: "Advard john",
+            imageAlt: "Advard john",       
             price: '1000',
             rating: '4.5',
             email: "Advard@gmail.com",

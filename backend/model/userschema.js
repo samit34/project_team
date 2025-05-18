@@ -43,13 +43,25 @@ required:true ,
     default: 'client'
   },
 
-  status: { type: String, enum: ['active', 'blocked'], default: 'active' },
+  category: {
+    type: String,
+    required: true,
+    default: 'Home Services'
+  },
+  subcategory: {
+    type: String,
+    required: true
+  },
+  aboutus: {
+    type: String,
+   
+  },
 
+  status: { type: String, enum: ['active', 'blocked'], default: 'active' }, 
+
+ 
 
 });
-
-
-
 
 const User = mongoose.model('User', userSchema);
 

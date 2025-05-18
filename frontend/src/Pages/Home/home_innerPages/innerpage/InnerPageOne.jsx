@@ -16,8 +16,6 @@ const InnerPageOne = () => {
 
   return (
     <>
-      
-
         {/* Content Section */}
         <div className="px-4 sm:px-6 lg:px-8 py-4 rounded-lg bg-gray-50 shadow-md my-4">
           {/* Subcategory Heading */}
@@ -80,32 +78,3 @@ const InnerPageOne = () => {
 
 export default InnerPageOne;
 
-{/* <div className="py-2 pb-5 mx-auto max-w-6xl 2xl:max-w-full">
-        
-        <div className="relative w-full">
-
-          <img src={currentCategory.banner} alt="" className="w-full h-48 md:h-64 lg:h-80 xl:h-96 object-cover rounded-lg" />
-
-
-         
-          <div className="absolute inset-1 sm:inset-10 flex items-center justify-start bg-opacity-40">
-            <div className="block text-left">
-              <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold text-left px-4 bg-gradient-to-r from-[#FFEDFA] to-[#FFB200] bg-clip-text text-transparent">
-                {CategoryName}
-              </h2>
-              <p className="text-xs sm:text-sm my-2 text-white ml-4 capitalize text-wrap">
-                services at your doorstep explore and connect <br />
-                with professional & Experiene service provider
-              </p>
-              <button class="text-xs   ml-4 md:text-base 2xl:text-xl  py-1 text-white"> Explore more →</button>
-             
-            </div>
-          </div>
-        </div> */}
-         {/* <button
-                type="submit"
-                className=" mt-3 ml-3 rounded-full px-2 py-1 sm:px-3 sm:py-2 text-white flex items-end sm:items-end sm:justify-center  text-xs sm:text-sm bg-blue-300"
-              >
-                Explore more
-                <HiArrowNarrowRight className="w-3 h-3 sm:w-5 sm:h-5 ml-px" />
-              </button> */}
